@@ -1,0 +1,35 @@
+import React from "react";
+import VideoBox from "./VideoBox";
+
+const About = () => {
+  return (
+    <div className="h-screen items-center flex flex-col w-screen justify-center mt-32">
+      <VideoBox
+        img1={
+          "https://images.unsplash.com/photo-1723903818490-6cb447ad1f05?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+        img2={
+          "https://images.unsplash.com/photo-1701334616679-5391e3411347?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+      />
+      <VideoBox
+        img1={
+          "https://images.unsplash.com/photo-1724313802205-6f70304e6c64?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+        img2={
+          "https://plus.unsplash.com/premium_photo-1724061887469-3a40dce2f611?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+      />
+      <VideoBox
+        img1={
+          "https://plus.unsplash.com/premium_photo-1723983556109-7415d601c377?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+        img2={
+          "https://images.unsplash.com/photo-1724169913051-49f6ff76a070?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+      />
+    </div>
+  );
+};
+
+export default About;
