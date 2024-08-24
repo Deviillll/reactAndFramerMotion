@@ -7,12 +7,15 @@ import About from "./Componenets/About";
 import VideoBox from "./Componenets/VideoBox";
 import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
+import AboutMe from "./Componenets/AboutMe.tsx";
 
 const App = () => {
   return (
     <div className=" overflow-x-hidden ">
-      <Gsap />
+      {/* <Gsap /> */}
+      <Navbar />
       <Header />
+      <AboutMe />
 
       <About />
       <Projects />
