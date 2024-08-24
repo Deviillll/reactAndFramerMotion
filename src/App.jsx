@@ -5,6 +5,8 @@ import Gsap from "./Componenets/GsapNav";
 import Header from "./Componenets/Header";
 import About from "./Componenets/About";
 import VideoBox from "./Componenets/VideoBox";
+import Contact from "./Componenets/Contact";
+import Projects from "./Componenets/Projects.tsx";
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Header />
 
       <About />
+      <Projects />
+      <Contact />
     </div>
   );
 };

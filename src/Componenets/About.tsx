@@ -11,14 +11,8 @@ const About = () => {
         img2={
           "https://images.unsplash.com/photo-1701334616679-5391e3411347?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
-      />
-      <VideoBox
-        img1={
-          "https://images.unsplash.com/photo-1724313802205-6f70304e6c64?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
-        img2={
-          "https://plus.unsplash.com/premium_photo-1724061887469-3a40dce2f611?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        }
+        head1={"strategy"}
+        head2={"strategy"}
       />
       <VideoBox
         img1={
@@ -27,6 +21,18 @@ const About = () => {
         img2={
           "https://images.unsplash.com/photo-1724169913051-49f6ff76a070?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         }
+        head1={"design"}
+        head2={"design"}
+      />
+      <VideoBox
+        img1={
+          "https://images.unsplash.com/photo-1724313802205-6f70304e6c64?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+        img2={
+          "https://plus.unsplash.com/premium_photo-1724061887469-3a40dce2f611?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        }
+        head1={"planning"}
+        head2={"planning"}
       />
     </div>
   );
