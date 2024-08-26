@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const Projects = () => {
+  const ref = useRef(null);
+  console.log(ref);
+  //console.log("object");
   return (
-    <div className="flex flex-col h-screen w-full space-y-5 justify-center items-center">
+    <div
+      id="div"
+      data-img="oyeHoye"
+      ref={ref}
+      className="flex flex-col h-screen w-full space-y-5 justify-center items-center"
+    >
       {Array.from({ length: 5 }).map((_, index) => (
         <div key={index} className="flex justify-between h-1/5 w-2/3 ">
           <h1 className="text-2xl text-white font-bold">Heading {index + 1}</h1>

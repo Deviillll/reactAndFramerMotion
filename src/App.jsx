@@ -8,6 +8,7 @@ import VideoBox from "./Componenets/VideoBox";
 import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
 import AboutMe from "./Componenets/AboutMe.tsx";
+import CV from "./Componenets/CV.tsx";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <About />
       <Projects />
       <Contact />
+      <CV />
     </div>
   );
 };
