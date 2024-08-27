@@ -13,8 +13,8 @@ import CV from "./Componenets/CV.tsx";
 const App = () => {
   return (
     <div className=" overflow-x-hidden ">
-      {/* <Gsap /> */}
       <Navbar />
+      {/* <Gsap /> */}
       <Header />
       <AboutMe />
 

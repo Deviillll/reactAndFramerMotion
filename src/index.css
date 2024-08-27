@@ -27,3 +27,6 @@ body {
 .perspective{
   transform: perspective(1000px) rotateX(-90deg) 
 }
+.myclass{
+  transform: translate(-50%);
+}

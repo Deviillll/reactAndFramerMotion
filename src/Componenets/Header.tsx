@@ -23,44 +23,6 @@ const Header = () => {
         // pin: true,
       },
     });
-    const timeline2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: container2.current, // Trigger animation on container scroll
-        start: "10% 30%", // Start when top of container reaches bottom of viewport
-        end: "100% 0%", // End when bottom of container reaches top of viewport
-        scrub: 3, // Smooth animation
-
-        //markers: true, // Enable smooth scrolling animation
-      },
-    });
-
-    timeline2
-      .to(
-        ".video",
-        {
-          scale: 1,
-          opacity: 1,
-          width: "80vw",
-          height: "100vh", // Distance to move right (adjust as needed)
-          border: "6px solid #f5638f",
-        },
-        "name2"
-      )
-      .to(
-        ".boxhead",
-        {
-          fontSize: "10vw",
-          y: -50,
-          color: "#fb7199",
-
-          opacity: 1,
-        },
-        "name2"
-      );
-
-    gsap.to(".boxhead", {
-      y: -40,
-    });
 
     // main heading animation
     timeline
@@ -80,33 +42,31 @@ const Header = () => {
           y: -100,
         },
         "name"
-      );
-    gsap.to(".leftH,.rightH", {
-      duration: 1,
-    });
+      )
+      .to(".curve", {
+        height: 0,
+        marginTop: 0,
+      });
   });
 
   return (
-    <div className="h-[100vh] w-full relative " ref={container2}>
-      <div
-        className="uppercase text-fuchsia-400 -space-y-3 text-[5vw] font-bold mt-[25vh] h-[90vh] w-screen"
-        ref={container}
-      >
-        <h1 className=" text-center leftH   tracking-tight">
-          Embrace the Journey
-        </h1>
-        <h1 className="ml-[14vw] rightH tracking-tight text-fuchsia-400">
-          Desafía las probabilidades
-        </h1>
-      </div>
-      {/* <div className="w-52 h-52 bg-white absolute left-[50%] translate-x-[-50%] top-[400px] z-20 video  border-2 border-fuchsia-500 overflow-hidden">
-        <div className="uppercase font-semibold text-5xl space-y-2 text-center absolute left-[50%] translate-y-[40%] translate-x-[-50%] ">
-          <h1 className="boxhead opacity-70 tracking-tighter">Excelence</h1>
-
-          <h1 className="boxhead opacity-70 tracking-tighter">future</h1>
-          <h1 className="boxhead opacity-70 tracking-tighter">goals</h1>
+    <div>
+      <div className="h-[100vh] w-full relative bg-gray-700 " ref={container2}>
+        <div
+          className="uppercase text-fuchsia-400 -space-y-3 text-[5vw] font-bold mt-[25vh] h-[90vh] w-screen"
+          ref={container}
+        >
+          <h1 className=" text-center leftH   tracking-tight">
+            Embrace the Journey
+          </h1>
+          <h1 className="ml-[14vw] rightH tracking-tight text-fuchsia-400">
+            Desafía las probabilidades
+          </h1>
         </div>
-      </div> */}
+      </div>
+      <div className="w-full h-[100px] relative overflow-hidden mt-[-100px] curve ">
+        <div className="w-[160%] h-[750%] absolute left-[50%] bg-[#0c0c1d]  translate-x-[-50%] rounded-[50%] "></div>
+      </div>
     </div>
   );
 };

@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <motion.div
       animate={open ? "open" : "closed"}
-      className="flex flex-col items-center relative z-50 justify-center bg-white text-black "
+      className=" relative z-50  text-black  "
     >
       <motion.div
         variants={varients}

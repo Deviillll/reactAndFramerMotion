@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Projects from "./Projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,6 +80,7 @@ const Contact = () => {
             <p>+92 3019060788</p>
           </div>
         </div>
+        {/* <Projects /> */}
       </div>
       <div className="h-[50vh] bg-[#0c0c1d] w-full overflow-hidden  absolute bottom-0 bottombox z-40">
         <div className=" absolute left-[50%] translate-x-[-50%] -top-36 ">
