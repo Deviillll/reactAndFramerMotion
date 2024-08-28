@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -9,6 +9,25 @@ import About from "./About";
 gsap.registerPlugin(ScrollTrigger);
 
 const Header = () => {
+  const works = ["animated", "dynamic", "creative", "modern"];
+  const [workIndex, setWorkIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWorkIndex((prevIndex) => (prevIndex + 1) % works.length);
+    }, 1500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const bg1 =
+    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmE5eTd2cmFobDZvMWZyaWJhanU3dHp3bDdnNmRweXdpbzZ0dnJ2eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2VB3ltDA0ryk2k/giphy.gif";
+
+  const bg2 =
+    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzA3emJxemNmazZzNm41cWszZnh2eXVtb2tsNGpsajF3ajJucmQ5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RIFmnDkGgxcvaS66IN/giphy.gif";
+
+  const bg3 =
+    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3NkMjI4Z2dhNWcyNXg1N3lqanJnajNocXlreGNpeXlvMjhyMXZrZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKDWHLxBC6td7lC/giphy.gif";
+
   const container = useRef<HTMLDivElement>(null);
   const container2 = useRef<HTMLDivElement>(null);
 
@@ -25,43 +44,54 @@ const Header = () => {
     });
 
     // main heading animation
-    timeline
-      .to(
-        ".leftH",
-        {
-          x: -200,
-          y: -100, // Distance to move left (adjust as needed)
-        },
-        "name"
-      )
-      .to(
-        ".rightH",
-
-        {
-          x: 200, // Distance to move right (adjust as needed)
-          y: -100,
-        },
-        "name"
-      )
-      .to(".curve", {
-        height: 0,
-        marginTop: 0,
-      });
+    timeline.to(".curve", {
+      height: 0,
+      marginTop: 0,
+    });
   });
 
   return (
     <div>
-      <div className="h-[100vh] w-full relative bg-gray-700 " ref={container2}>
+      <div className="h-[100vh] w-full relative  " ref={container2}>
         <div
-          className="uppercase text-fuchsia-400 -space-y-3 text-[5vw] font-bold mt-[25vh] h-[90vh] w-screen"
+          className="uppercase  -space-y-4 flex flex-col md:ml-10  font-bold mt-[25vh] h-[90vh] w-screen"
           ref={container}
         >
-          <h1 className=" text-center leftH   tracking-tight">
-            Embrace the Journey
+          <h1 className="text-[4vw] md:ml-10">
+            Hi I'm&nbsp;
+            <span
+              style={{ backgroundImage: `url(${bg2})` }}
+              className="bg-clip-text text-purple-300/40 bg-cover bg-center tracking-wide"
+            >
+              hammad
+            </span>
           </h1>
-          <h1 className="ml-[14vw] rightH tracking-tight text-fuchsia-400">
-            Desafía las probabilidades
+          <h1 className="text-[4vw] md:ml-10">
+            full stact dev{" "}
+            <span className="bg-clip-text text-purple-300/90  bg-top">
+              loving
+            </span>
           </h1>
+          <div className="flex md:ml-10 items-center pt-2">
+            <span className="text-[4vw] relative">
+              to
+              <span
+                style={{
+                  backgroundImage: `url(${bg3})`,
+                }}
+                className=" h-[25px] w-[25px] bg-center bg-cover   rounded-full absolute z-10 top-[25px] left-[38px]"
+              ></span>{" "}
+              create
+            </span>
+            <h1
+              style={{ backgroundImage: `url(${bg1})` }}
+              className="transition-all ease-out duration-100 text-[4vw]  bg-clip-text text-transparent bg-cover bg-center"
+            >
+              &nbsp;{works[workIndex]}
+            </h1>
+          </div>
+
+          <h1 className="text-[4vw] md:ml-10">websites</h1>
         </div>
       </div>
       <div className="w-full h-[100px] relative overflow-hidden mt-[-100px] curve ">

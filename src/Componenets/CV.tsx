@@ -6,7 +6,7 @@ import React from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 //@ts-ignore
-import myImage from "../../public/2.png";
+import myImage from "/2.png";
 
 const CV = () => {
   const container = useRef<HTMLDivElement>(null);
@@ -37,7 +37,7 @@ const CV = () => {
 
       .to(".parent", {
         marginTop: "85vh",
-        duration: 0.5,
+        duration: 1,
       })
       .to(".head", {
         marginTop: "-30vh",
@@ -45,6 +45,7 @@ const CV = () => {
       })
       .to(".parent", {
         scale: 0.8,
+        delay: 0.4,
       })
       .to(".pic", {
         filter: "grayscale(1)",
@@ -55,9 +56,9 @@ const CV = () => {
       ref={container}
       className="flex flex-col justify-center items-center h-[200vh] w-screen relative"
     >
-      <div className="h-[35vh] w-1/2 flex flex-col justify-center items-center parent ">
+      <div className="h-[35vh] w-[40vw] flex flex-col justify-center items-center parent ">
         {/* fist */}
-        <div className="h-full w-full relative  ">
+        <div className="h-full w-full relative -mb-[1px] ">
           <div className="w-full  h-full rounded  ">
             <img
               className="w-full pic h-full object-cover object-top origin-top"
@@ -65,10 +66,11 @@ const CV = () => {
               alt=""
             />
           </div>
-          <div className=" absolute bottom-0 w-full h-[3px] rounded-b bg-gradient-to-r from-zinc-50 to-gray-50 border border-zinc-50 "></div>
+          <div className=" absolute bottom-0 w-full h-[3px] rounded-b bg-gradient-to-r from-gray-100 to-gray-50 border border-zinc-50 "></div>
         </div>
         {/* second */}
         <div className="h-full w-full relative img2 my-[.4px] perspective origin-top">
+          <div className=" absolute top-0 w-full h-[1px] rounded bg-white  "></div>
           <div className="w-full  h-full  rounded  ">
             <img
               className="w-full pic h-full object-cover object-center origin-top  "

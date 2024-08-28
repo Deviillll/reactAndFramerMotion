@@ -13,8 +13,8 @@ const AboutMe = () => {
       scrollTrigger: {
         trigger: container.current, // Trigger animation on container scroll
         start: "40% 50%", // Start when top of container reaches bottom of viewport
-        end: "90% 50%", // End when bottom of container reaches top of viewport
-        scrub: 2, // Smooth animation
+        end: "90% 30%", // End when bottom of container reaches top of viewport
+        scrub: 0.5, // Smooth animation
         //markers: true, // Enable smooth scrolling animation
         pin: true,
       },
@@ -42,7 +42,7 @@ const AboutMe = () => {
         <h1>elit. Porro accusantium numquam eligendi</h1>
       </div>
       {/* 2nd div */}
-      <div className="text-5xl space-y-2 text-fuchsia-500 whitespace-nowrap overflow-hidden  opacity-100 absolute left-[15%]">
+      <div className="text-5xl space-y-2 text-white whitespace-nowrap overflow-hidden  opacity-100 absolute left-[15%]">
         <h1 className="line1  whitespace-nowrap overflow-hidden w-0">
           Lorem ipsum, dolor sit amet consectetur
         </h1>

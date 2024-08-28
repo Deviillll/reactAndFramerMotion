@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-color: #0c0c1d;
+  @apply bg-zinc-950 text-zinc-50
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 *{
   font-family: 'Playfair Display SC', serif;
-}
+} */
 /* .custom-drop-shadow {
   @apply shadow-[-1px_12px] blur-5 shadow-color-gray-500;
 } */

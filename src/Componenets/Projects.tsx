@@ -69,9 +69,9 @@ const Projects = () => {
         cursor.current!.style.borderRadius = "100%";
       });
 
-      // heading?.addEventListener("mouseenter", () => {
-      //   cursor.current!.style.backgroundImage = "none";
-      // });
+      heading?.addEventListener("mouseenter", () => {
+        cursor.current!.style.backgroundImage = "none";
+      });
 
       heading?.addEventListener("mouseleave", () => {
         const imgIndex = element.getAttribute("data-img");
@@ -90,7 +90,7 @@ const Projects = () => {
   return (
     <div
       ref={ref}
-      className="flex relative flex-col h-[100vh] bg-zinc-950 py-5 w-full space-y-5 justify-center items-center"
+      className="flex relative flex-col h-[100vh]  py-5 w-full space-y-5 justify-center items-center"
     >
       <div
         ref={cursor}
