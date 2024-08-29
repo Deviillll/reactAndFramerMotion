@@ -29,11 +29,11 @@ const AboutMe = () => {
 
   return (
     <div
-      className="font-semibold h-screen w-screen flex items-center  overflow-x-hidden"
+      className=" h-screen w-screen   flex items-center  overflow-x-hidden"
       ref={container}
     >
       {/* 1st div */}
-      <div className="text-5xl space-y-2 text-gray-100 opacity-20 absolute left-[15%]">
+      <div className="text-5xl  font-custombold3 text-gray-100 opacity-20 absolute left-[15%]">
         <h1>Lorem ipsum, dolor sit amet consectetur</h1>
         <h1> eaque animi sunt, blanditiis magni at</h1>
 
@@ -42,7 +42,7 @@ const AboutMe = () => {
         <h1>elit. Porro accusantium numquam eligendi</h1>
       </div>
       {/* 2nd div */}
-      <div className="text-5xl space-y-2 text-white whitespace-nowrap overflow-hidden  opacity-100 absolute left-[15%]">
+      <div className="text-5xl font-custombold3 text-white whitespace-nowrap overflow-hidden  opacity-100 absolute left-[15%]">
         <h1 className="line1  whitespace-nowrap overflow-hidden w-0">
           Lorem ipsum, dolor sit amet consectetur
         </h1>

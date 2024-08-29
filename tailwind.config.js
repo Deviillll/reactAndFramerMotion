@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      
+      fontFamily: {
+        custombold: ["Bold"],
+        custombold2: ["Bold2"],
+        custombold3: ["Bold3"],
+        custombold4: ["Bold4"],
+        custombold5: ["Bold5"],
+        custombold6: ["Bold6"],
+      },
     },
   },
   plugins: [],
-}
+};

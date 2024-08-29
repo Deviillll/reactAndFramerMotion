@@ -4,23 +4,50 @@
 body {
   @apply bg-zinc-950 text-zinc-50
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-*{
-  font-family: 'Nunito', sans-serif;
+*::selection {
+  @apply bg-zinc-50 text-zinc-950
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
-*{
-  font-family: 'Playfair Display SC', serif;
-} */
-/* .custom-drop-shadow {
-  @apply shadow-[-1px_12px] blur-5 shadow-color-gray-500;
-} */
+@font-face {
+  font-family:"Bold";
+ src: url('./assets/fonts/Fellix-Bold.ttf') format('truetype');
+  /* src: local('Fellix-Bold'), */
 
-/* .customShadow {
-  box-shadow: -1px 12px 5px rgba(240, 222, 222, 0.815);
-} */
+}
+@font-face {
+  font-family:"Bold2";
+  src: local('PPMori-SemiBold'),
+   url('./assets/fonts/PPMori-SemiBold.ab48fc0e.ttf') format('truetype');
+
+}
+@font-face {
+  font-family:"Bold3";
+  src: local('PPNeueMontreal-Medium'),
+   url('./assets/fonts/PPNeueMontreal-Medium.88ee7c9.ttf') format('truetype');
+
+}
+@font-face {
+  font-family:"Bold4";
+ src: url('./assets/fonts/NeurialGrotesk-Regular.ttf');
+
+}
+@font-face {
+  font-family:"Bold5";
+ src: url('./assets/fonts/66bbc5ba1d98e86de2c5a882_WFVisualSans-SemiBoldText\ \(1\).ttf');
+
+}
+@font-face {
+  font-family:"Bold6";
+ src: url('./assets/fonts/667a857a4fccb876bd2af1d8_Satoshi-Variable.ttf');
+
+}
+
+
+
+
+
+
+
 
 .customShadow {
   filter: drop-shadow(0px 5px 7px #f7f7f7);

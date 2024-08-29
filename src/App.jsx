@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className=" overflow-x-hidden ">
       <Navbar />
-      {/* <Gsap /> */}
+
       <Header />
       <AboutMe />
 
