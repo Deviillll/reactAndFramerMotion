@@ -32,23 +32,6 @@ const Header = () => {
   const container2 = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    // const timeline = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: container.current, // Trigger animation on container scroll
-    //     start: "top 25%", // Start when top of container reaches bottom of viewport
-    //     end: "bottom 80%", // End when bottom of container reaches top of viewport
-    //     scrub: 0.5, // Smooth animation
-    //     // markers: true, // Enable smooth scrolling animation
-    //     // pin: true,
-    //   },
-    // });
-
-    // // main heading animation
-    // timeline.to(".curve", {
-    //   height: 0,
-    //   marginTop: 0,
-    //   ease: "linear",
-    // });
     gsap.from(".textanime", {
       duration: 2.5,
       xPercent: -90,

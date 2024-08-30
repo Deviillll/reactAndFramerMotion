@@ -62,7 +62,7 @@ const Contact = () => {
       className="relative uppercase main overflow-hidden h-screen w-full"
       ref={container2}
     >
-      <div className="h-[50vh] bg-[#0c0c1d] overflow-hidden w-full  absolute top-0 topbox z-50 ">
+      <div className="h-[50vh] bg-zinc-950 overflow-hidden w-full  absolute top-0 topbox z-50 ">
         <div className=" absolute left-[50%] translate-x-[-50%] -bottom-36 ">
           <h1 className="text-[15vw] font-bold text-center text-fuchsia-400 bottom-[50%] toph">
             Contact
@@ -80,9 +80,8 @@ const Contact = () => {
             <p>+92 3019060788</p>
           </div>
         </div>
-        {/* <Projects /> */}
       </div>
-      <div className="h-[50vh] bg-[#0c0c1d] w-full overflow-hidden  absolute bottom-0 bottombox z-40">
+      <div className="h-[50vh] bg-zinc-950 w-full overflow-hidden  absolute bottom-0 bottombox z-40">
         <div className=" absolute left-[50%] translate-x-[-50%] -top-36 ">
           <h1 className="text-[15vw] font-bold text-center text-fuchsia-400 btmh">
             Contact

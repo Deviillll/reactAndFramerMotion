@@ -90,7 +90,7 @@ const Projects = () => {
   return (
     <div
       ref={ref}
-      className="flex relative flex-col h-[100vh]  py-5 w-full space-y-5 justify-center items-center"
+      className="flex relative flex-col h-[60vh] md:h-[100vh] font-custombold8 uppercase  py-5 w-full space-y-5 justify-center items-center"
     >
       <div
         ref={cursor}
@@ -100,15 +100,14 @@ const Projects = () => {
         <div
           data-img={item.img}
           key={index}
-          className={`flex cursor-pointer relative forEach flex-col justify-center items-start h-1/5 w-2/3 border-b ${
+          className={`flex cursor-pointer relative forEach flex-col justify-center items-start h-1/5 w-[80%] border-b ${
             index === 0 && "border-t"
           } `}
         >
           <div id="parent" className=" h-full w-[23%] flex items-center">
-            <h1 className="text-2xl text-white font-bold ">
-              {item.title}{" "}
+            <h1 className="text-2xl md:text-4xl text-white font-bold ">
+              {item.title}
               <span className="ml-4 text-3xl text-fuchsia-500 font-bold">
-                {" "}
                 ↗
               </span>
             </h1>

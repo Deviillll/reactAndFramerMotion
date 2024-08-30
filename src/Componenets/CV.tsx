@@ -40,7 +40,7 @@ const CV = () => {
         duration: 1,
       })
       .to(".head", {
-        marginTop: "-30vh",
+        marginTop: "-25vh",
         opacity: 1,
       })
       .to(".parent", {
@@ -54,9 +54,9 @@ const CV = () => {
   return (
     <div
       ref={container}
-      className="flex flex-col justify-center items-center h-[200vh] w-screen relative"
+      className="flex flex-col justify-center items-center h-[150vh] md:h-[200vh] w-screen relative"
     >
-      <div className="h-[35vh] w-[40vw] flex flex-col justify-center items-center parent ">
+      <div className="md:h-[35vh] h-[20vh] md:w-[40vw] w-[80vw] flex flex-col justify-center items-center parent ">
         {/* fist */}
         <div className="h-full w-full relative -mb-[1px] ">
           <div className="w-full  h-full rounded  ">
@@ -92,8 +92,8 @@ const CV = () => {
           </div>
         </div>
       </div>
-      <div className="text-fuchsia-400">
-        <h1 className="text-4xl font-bold head z-30 relative bottom-0 opacity-0">
+      <div className="">
+        <h1 className="md:text-4xl text-2xl font-bold head z-30 relative bottom-0 opacity-0">
           Created by Hammad
         </h1>
       </div>

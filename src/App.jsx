@@ -13,17 +13,16 @@ import NewAboutMe from "./Componenets/NewAboutMe.tsx";
 
 const App = () => {
   return (
-    <div className=" ">
-      {/* <Navbar />
+    <div className=" overflow-x-hidden">
+      <Navbar />
 
-      <Header /> */}
+      <Header />
       <AboutMe />
-      {/* <NewAboutMe /> */}
 
-      {/* <About />
+      <About />
       <Projects />
+      <CV />
       <Contact />
-      <CV /> */}
     </div>
   );
 };
