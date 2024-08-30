@@ -8,14 +8,15 @@ const Navbar = () => {
 
   const varients = {
     open: {
-      clipPath: "circle(800px at 40px 40px)",
+      clipPath: "circle(950px at calc(100% - 40px) 40px)",
       transition: {
         type: "spring",
-        stiffness: 20,
+        stiffness: 50,
+        damping: 30,
       },
     },
     closed: {
-      clipPath: "circle(30px at 35px 40px)",
+      clipPath: "circle(30px at calc(100% - 35px) 40px)",
       transition: {
         type: "spring",
         stiffness: 400,
@@ -28,11 +29,11 @@ const Navbar = () => {
   return (
     <motion.div
       animate={open ? "open" : "closed"}
-      className=" relative z-50  right-10 text-black  "
+      className=" relative z-50 w-screen  "
     >
       <motion.div
         variants={varients}
-        className="fixed top-0 left-0 bottom-0 w-[80vw] sm:w-[60vw] z lg:w-[35vw] bg-white"
+        className={`fixed lg:top-0 top-2 right-1 bottom-0  w-[80vw] sm:w-[70vw] z lg:w-[35vw] bg-gray-50`}
       >
         <Links />
       </motion.div>

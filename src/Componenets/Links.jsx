@@ -19,7 +19,7 @@ const Links = () => {
   return (
     <motion.div
       variants={varients}
-      className="absolute z-50 w-full h-full flex flex-col items-center justify-center gap-6"
+      className="absolute z-50 w-full h-full flex flex-col  items-center justify-center gap-6"
     >
       {items.map((item, index) => (
         <motion.a
@@ -28,7 +28,7 @@ const Links = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.95 }}
           href="#"
-          className="font-semibold text-2xl uppercase"
+          className="font-custombold3 font-bold text-2xl md:text-3xl text-zinc-950 uppercase"
         >
           {item}
         </motion.a>

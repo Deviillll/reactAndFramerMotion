@@ -12,16 +12,16 @@ import CV from "./Componenets/CV.tsx";
 
 const App = () => {
   return (
-    <div className=" overflow-x-hidden ">
+    <div className=" ">
       <Navbar />
 
       <Header />
-      <AboutMe />
+      {/* <AboutMe />
 
       <About />
       <Projects />
       <Contact />
-      <CV />
+      <CV /> */}
     </div>
   );
 };
