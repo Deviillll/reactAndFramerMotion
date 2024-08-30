@@ -32,22 +32,23 @@ const Header = () => {
   const container2 = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    const timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: container.current, // Trigger animation on container scroll
-        start: "top 25%", // Start when top of container reaches bottom of viewport
-        end: "bottom 80%", // End when bottom of container reaches top of viewport
-        scrub: 3, // Smooth animation
-        // markers: true, // Enable smooth scrolling animation
-        // pin: true,
-      },
-    });
+    // const timeline = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: container.current, // Trigger animation on container scroll
+    //     start: "top 25%", // Start when top of container reaches bottom of viewport
+    //     end: "bottom 80%", // End when bottom of container reaches top of viewport
+    //     scrub: 0.5, // Smooth animation
+    //     // markers: true, // Enable smooth scrolling animation
+    //     // pin: true,
+    //   },
+    // });
 
-    // main heading animation
-    timeline.to(".curve", {
-      height: 0,
-      marginTop: 0,
-    });
+    // // main heading animation
+    // timeline.to(".curve", {
+    //   height: 0,
+    //   marginTop: 0,
+    //   ease: "linear",
+    // });
     gsap.from(".textanime", {
       duration: 2.5,
       xPercent: -90,
@@ -128,9 +129,9 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[100px] relative overflow-hidden mt-[-100px] curve ">
-        <div className="w-[160%] h-[750%] absolute left-[50%] bg-[#0c0c1d]  translate-x-[-50%] rounded-[50%] "></div>
-      </div>
+      {/* <div className="w-full h-[80px] relative overflow-hidden mt-[-100px] curve ">
+        <div className="w-[160%] h-[750%] absolute left-[50%] bg-[#fff]  translate-x-[-50%] rounded-[50%] "></div>
+      </div> */}
     </div>
   );
 };

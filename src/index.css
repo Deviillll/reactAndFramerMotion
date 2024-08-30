@@ -4,6 +4,10 @@
 body {
   @apply bg-zinc-950 text-zinc-50
 }
+body{
+  overflow-x: hidden;
+}
+
 *::selection {
   @apply bg-zinc-50 text-zinc-950
 }
@@ -39,6 +43,21 @@ body {
 @font-face {
   font-family:"Bold6";
  src: url('./assets/fonts/667a857a4fccb876bd2af1d8_Satoshi-Variable.ttf');
+
+}
+@font-face {
+  font-family:"Bold7";
+ src: url('./assets/fonts/founders-grotesk-x.cd2d353.ttf');
+
+}
+@font-face {
+  font-family:"Bold8";
+ src: url('./assets/fonts/PPMori-Light.0f42b11c.ttf');
+
+}
+@font-face {
+  font-family:"Bold9";
+ src: url('./assets/fonts/HelveticaNowText-Regular.ttf');
 
 }
 

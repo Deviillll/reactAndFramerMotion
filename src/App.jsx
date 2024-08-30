@@ -9,16 +9,18 @@ import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
 import AboutMe from "./Componenets/AboutMe.tsx";
 import CV from "./Componenets/CV.tsx";
+import NewAboutMe from "./Componenets/NewAboutMe.tsx";
 
 const App = () => {
   return (
     <div className=" ">
-      <Navbar />
+      {/* <Navbar />
 
-      <Header />
-      {/* <AboutMe />
+      <Header /> */}
+      <AboutMe />
+      {/* <NewAboutMe /> */}
 
-      <About />
+      {/* <About />
       <Projects />
       <Contact />
       <CV /> */}
