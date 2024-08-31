@@ -31,69 +31,66 @@ const Header = () => {
   const container = useRef<HTMLDivElement>(null);
   const container2 = useRef<HTMLDivElement>(null);
 
-  useGSAP(() => {
-    gsap.from(".textanime", {
-      duration: 2.5,
-      xPercent: -90,
+  // useGSAP(() => {
+  //   gsap.from(".textanime", {
+  //     duration: 2.5,
+  //     xPercent: -90,
 
-      ease: "power4.out",
-    });
-    gsap.from(".btn", {
-      delay: 1.8,
-      xPercent: -50,
+  //     ease: "power4.out",
+  //   });
+  //   gsap.from(".btn", {
+  //     delay: 1.8,
+  //     xPercent: -50,
 
-      ease: "power4.out",
-    });
-  });
+  //     ease: "power4.out",
+  //   });
+  // });
 
   return (
     <div className="overflow-x-hidden">
       <div
-        className="h-[75vh] md:h-[80vh]  lg:h-[90vh] w-full relative  "
+        className="h-[80vh] md:h-[80vh]  lg:h-[90vh] w-full relative text-zinc-50 "
         ref={container2}
       >
+        {/* <span
+          style={{
+            backgroundImage: `url(${bg3})`,
+          }}
+          className="hidden lg:block w-[3.4vw] h-[3.4vw] bg-center bg-cover   rounded-full absolute z-10 xl:top-[38.2vh] top-[1.4vh] left-[4.2vw] xl:left-[10.2vw] firstCircle "
+        ></span>
+        <span
+          style={{
+            backgroundImage: `url(${bg3})`,
+          }}
+          className="hidden lg:block w-[3.4vw] h-[3.4vw] bg-center bg-cover  secondCircle rounded-full absolute z-10 xl:top-[23.9vh] xl:left-[65.8vw] lg:top-[2.8vh] lg:left-[4.5vw]"
+        ></span> */}
         <div
-          className="uppercase  w-screen text-[8vw] lg:text-[6vw] leading-tight font-custombold4 md:font-custombold2  sm:font-custombold3 font-bold  lg:-space-y-2 xl:-space-y-4 flex flex-col md:ml-10 ml-5 sm:ml-8 justify-center md:mt-[6vh] lg:mt-[10vh]  sm:mt-10 space-y-1  h-[70vh] md:h-[80vh] md:w-screen"
+          className="uppercase  w-screen text-[9vw] lg:text-[6.5vw] leading-tight font-custombold6  sm:font-custombold3 font-bold  lg:-space-y-2 xl:-space-y-3 flex flex-col md:ml-10 ml-10 justify-center md:mt-[6vh] lg:mt-[10vh]  sm:mt-10 space-y-1  h-[80vh] md:h-[80vh] md:w-screen"
           ref={container}
         >
           <h1 className=" md:ml-10 textanime lg:w-full w-[30vw]">
             Hi Im&nbsp;
             <span
               style={{ backgroundImage: `url(${bg2})` }}
-              className="bg-clip-text text-purple-300/80  bg-cover bg-center tracking-wide"
+              className="bg-clip-text text-purple-300/80 bg-cover bg-center tracking-wide"
             >
               hammad
             </span>
           </h1>
-          <h1 className=" md:ml-10 textanime w-[65vw] md:w-full">
+          <h1 className=" md:ml-10 textanime w-[70vw] md:w-full">
             <span
               style={{
                 backgroundImage: `url(${bg1})`,
               }}
               className="h-6 w-12 sm:h-10 sm:w-16 md:h-[52px]  xl:h-[52px] md:w-[85px] textanime  bg-fit bg-bottom inline-block transition-colors ease-linear  bg-clip-border rounded-md bg-purple-300/70   "
             ></span>
-            &nbsp;full stack dev{" "}
-            <span className="bg-clip-text  relative  bg-top">
-              loving
-              {/*  love circle  */}
-              <span
-                style={{
-                  backgroundImage: `url(${bg3})`,
-                }}
-                className="hidden lg:block w-[3vw] h-[3vw] bg-center bg-cover   rounded-full absolute z-10 xl:top-[2vh] top-[1.4vh] left-[4.2vw] xl:left-[4.1vw]"
-              ></span>
-            </span>
+            &nbsp;full stack dev loving
+            {/*  love circle  */}
           </h1>
-          <div className="flex  md:w-full  md:ml-10 items-center textanime">
-            <h1 className=" relative  ">
+          <div className="md:flex   md:w-full  md:ml-10 items-center textanime">
+            <h1 className=" relative inline  ">
               to
-              {/*  to circle  */}
-              <h1
-                style={{
-                  backgroundImage: `url(${bg3})`,
-                }}
-                className="hidden lg:block w-[3vw] h-[3vw] bg-center bg-cover   rounded-full absolute z-10 xl:top-[4vh] xl:left-[4.5vw] lg:top-[2.8vh] lg:left-[4.5vw]"
-              ></h1>{" "}
+              {/*  to circle  */}{" "}
               <span className="text-purple-300/90"> create</span>
             </h1>
             <h1
@@ -106,15 +103,12 @@ const Header = () => {
 
           <h1 className=" md:ml-10 flex   textanime">websites </h1>
           <div className="md:ml-10 lg:ml-14  btn">
-            <button className=" text-xs text-center md:text-xl flex-col lg:text-3xl uppercase flex mt-5 md:mt-4 lg:mt-3 items-center rounded-sm tracking-tight bg-zinc-50 px-2 md:px-3 lg:px-4 lg:py-2 xl:px-5 xl:py-3 font-custombold6 py-1 text-zinc-950/90 hover:scale-110 hover:bg-purple-300/90 hover:text-gray-50 transition-all ease-in-out duration-150 ">
+            <button className=" text-sm text-center md:text-xl flex-col lg:text-3xl uppercase flex mt-5 md:mt-4 lg:mt-3 items-center rounded-sm tracking-tight bg-zinc-50 px-2 md:px-3 lg:px-4 lg:py-2 xl:px-5 xl:py-3 font-custombold6 py-2 text-zinc-950/90 hover:scale-110 hover:bg-purple-300/90 hover:text-gray-50 transition-all ease-in-out duration-150 ">
               download cv
             </button>
           </div>
         </div>
       </div>
-      {/* <div className="w-full h-[80px] relative overflow-hidden mt-[-100px] curve ">
-        <div className="w-[160%] h-[750%] absolute left-[50%] bg-[#fff]  translate-x-[-50%] rounded-[50%] "></div>
-      </div> */}
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Componenets/Navbar";
-import ScrollAnimation from "./Componenets/ScrollAnimation";
+
 import Gsap from "./Componenets/GsapNav";
 import Header from "./Componenets/Header";
 import About from "./Componenets/About";
@@ -9,7 +9,6 @@ import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
 import AboutMe from "./Componenets/AboutMe.tsx";
 import CV from "./Componenets/CV.tsx";
-import NewAboutMe from "./Componenets/NewAboutMe.tsx";
 
 const App = () => {
   return (

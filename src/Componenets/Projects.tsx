@@ -18,10 +18,6 @@ const data = [
     title: "Twitter",
     img: "https://images.unsplash.com/photo-1724649399943-5f50ea36200a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  // {
-  //   title: "SnapChat",
-  //   img: "https://images.unsplash.com/photo-1723965453045-b025e5b3af13?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  // },
 ];
 
 const Projects = () => {
@@ -90,24 +86,24 @@ const Projects = () => {
   return (
     <div
       ref={ref}
-      className="flex relative flex-col h-[60vh] md:h-[100vh] font-custombold8 uppercase  py-5 w-full space-y-5 justify-center items-center"
+      className="flex relative flex-col h-[80vh] bg-neutral-50 py-10 text-zinc-950 md:h-[100vh] font-custombold4 uppercase   w-full space-y-5 justify-center items-center"
     >
       <div
         ref={cursor}
-        className="absolute w-10 h-10 transition-colors ease-in-out duration-150 bg-center bg-cover rounded-full top-0 left-0"
+        className="absolute w-10 h-10 transition-colors ease-in-out duration-150 bg-center bg-cover rounded-full top-0 left-0 hidden md:block"
       ></div>
       {data.map((item, index) => (
         <div
           data-img={item.img}
           key={index}
-          className={`flex cursor-pointer relative forEach flex-col justify-center items-start h-1/5 w-[80%] border-b ${
+          className={`flex cursor-pointer border-black relative forEach flex-col justify-center items-start h-[15vh] md:h-[20vh] w-[80%] border-b ${
             index === 0 && "border-t"
           } `}
         >
           <div id="parent" className=" h-full w-[23%] flex items-center">
-            <h1 className="text-2xl md:text-4xl text-white font-bold ">
+            <h1 className="text-2xl md:text-4xl  font-bold ">
               {item.title}
-              <span className="ml-4 text-3xl text-fuchsia-500 font-bold">
+              <span className="ml-4 text-3xl md:text-4xl lg:text-6xl  font-bold">
                 ↗
               </span>
             </h1>
