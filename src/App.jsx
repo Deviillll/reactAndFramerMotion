@@ -1,27 +1,30 @@
 import React from "react";
-import Navbar from "./Componenets/Navbar";
+import LocomotiveScroll from "locomotive-scroll";
 
-import Gsap from "./Componenets/GsapNav";
 import Header from "./Componenets/Header";
 import About from "./Componenets/About";
-import VideoBox from "./Componenets/VideoBox";
+
 import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
 import AboutMe from "./Componenets/AboutMe.tsx";
 import CV from "./Componenets/CV.tsx";
 
-const App = () => {
-  return (
-    <div className=" overflow-x-hidden">
-      <Navbar />
+//import "node_modules/locomotive-scroll/dist/locomotive-scroll";
 
+const App = () => {
+  const locomotiveScroll = new LocomotiveScroll();
+
+  return (
+    <div className=" ">
       <Header />
       <AboutMe />
 
       <About />
       <Projects />
       <CV />
+
       <Contact />
+      <div className="h-screen"></div>
     </div>
   );
 };
