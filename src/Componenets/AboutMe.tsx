@@ -65,7 +65,7 @@ const AboutMe = () => {
 
   return (
     <div
-      className="md:h-[70vh]  lg:h-[100vh] w-screen h-[50vh] overflow-x-hidden md:bg-neutral-50 "
+      className="md:h-[70vh]  lg:h-[100vh] w-screen h-[50vh] overflow-x-hidden md:bg-zinc-50 "
       ref={container}
     >
       <div className="flex flex-col justify-center px-5 font-custombold4   items-center md:w-full h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-[100vh] overflow-x-hidden">
@@ -73,10 +73,10 @@ const AboutMe = () => {
         <div className="lg:text-3xl xl:text-4xl text-xl md:text-2xl  absolute left-[5%] md:text-neutral-950">
           <h1 className="sm1 opacity-30"> Hi! I'm Hammad,</h1>
           <h1 className="sm2 opacity-30">
-            a Computer Science student and Full Stack Developer
+            a Computer Science student and software engineer.
           </h1>
           <h1 className="sm3 opacity-30">
-            love creating animated and modern websites
+            love creating animated and modern applications
           </h1>
           <h1 className="sm4 opacity-30">
             combining my skills in both front-end and back-end development
@@ -97,10 +97,10 @@ const AboutMe = () => {
             Hi! I'm Hammad,
           </h1>
           <h1 className="line1 whitespace-nowrap overflow-hidden w-0">
-            a Computer Science student and Full Stack Developer.
+            a Computer Science student and software engineer.
           </h1>
           <h1 className="line2 whitespace-nowrap overflow-hidden w-0">
-            love creating animated and modern websites
+            love creating animated and modern applications
           </h1>
           <h1 className="line3 whitespace-nowrap overflow-hidden w-0">
             combining my skills in both front-end and back-end development
@@ -118,6 +118,7 @@ const AboutMe = () => {
           </h1>
         </div>
       </div>
+      {/* pic  */}
     </div>
   );
 };

@@ -17,9 +17,9 @@ const Contact = () => {
         scrollTrigger: {
           trigger: container2.current,
           start: "50% 50%",
-          end: "100% 0%",
+          end: "100% -20%",
           scrub: 1.5,
-          markers: true,
+          // markers: true,
           pin: true,
         },
       });
@@ -42,21 +42,38 @@ const Contact = () => {
         .to(
           ".toph",
           {
-            top: "100%",
+            top: "80%",
           },
           "name"
         )
         .to(
           ".btmh",
           {
-            top: "-50%",
+            top: "-80%",
           },
           "name"
         )
-        .to(innerContainer.current, {
-          delay: 0.2,
+        .to(".firstInnerChild", {
+          scale: 1.1,
+          xPercent: -15,
+          ease: "power1.inOut",
+          duration: 0.8,
+        })
+
+        .to(".innerContainer", {
           xPercent: -50,
+          ease: "power1.in",
+          delay: 0.2,
+        })
+        .to(".firstInnerChild2", {
+          scale: 1,
+
+          ease: "power1.inOut",
         });
+      // .to(innerContainer.current, {
+      //   delay: 0.2,
+      //   xPercent: -50,
+      // });
 
       // Cleanup function to kill ScrollTrigger instances
       return () => {
@@ -70,26 +87,86 @@ const Contact = () => {
 
   return (
     <div
-      className="relative uppercase  main overflow-hidden font-custombold2 h-[200vh] text-black bg-zinc-50"
+      className="relative uppercase overflow-hidden main  font-custombold2  hidden lg:block lg:h-[100vh] text-black bg-zinc-500"
       ref={container2}
     >
-      <div className="h-1/2 overflow-hidden bg-zinc-50 absolute top-0 topbox z-40 w-screen">
-        <div className="absolute -bottom-12  lg:-bottom-[155px] toph left-[50%] translate-x-[-50%]">
-          <h1 className="text-[15vw] font-bold text-center ">projects</h1>
+      <div className="h-1/2  bg-zinc-50 overflow-hidden absolute top-0 topbox z-40 w-screen">
+        <div className="absolute -bottom-12  lg:bottom-[-155px] toph left-[50%] translate-x-[-50%]">
+          <h1 className="text-[15vw] font-bold text-center  ">projects</h1>
         </div>
       </div>
       <div
-        className="h-full w-[200vw] bg-black innerContainer  "
+        className="h-screen hidden lg:flex w-[200vw] bg-zinc-950 innerContainer overflow-hidden justify-between  "
         ref={innerContainer}
       >
-        <div className="h-[200vh] w-full flex  overflow-hidden  ">
-          <div className="w-[100vw] h-full flex-1 bg-zinc-950"></div>
-          <div className="w-[100vw] h-full flex-1  bg-zinc-50  "></div>
+        {/* first inner child */}
+        <div className="w-[100vw]  overflow-hidden firstInnerChild font-custombold9 h-full flex justify-around items-center text-zinc-50  bg-zinc-950">
+          <div className=" w-[40%]  ">
+            <h1 className="text-4xl font-custombold6 ">Food Ordering app</h1>
+            <p className="text-xl md:mt-6 leading-tight tracking-tight">
+              {" "}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis id aperiam fugiat a porro voluptatibus, quae
+              accusantium beatae accusamus impedit doloremque alias laudantium
+              quis voluptatum provident laboriosam eveniet, in iusto?
+            </p>
+          </div>
+          <div className=" w-[40%] justify-center flex flex-col space-y-3  ">
+            <img
+              className="w-[80%] mx-auto rounded-md"
+              src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+              alt=""
+            />
+            <div className="flex gap-x-4 justify-end">
+              <img
+                className="w-1/2 h-44 block rounded-md "
+                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                alt=""
+              />
+              <img
+                className="w-1/2 h-44 block rounded-md scale-90"
+                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        {/* second inner child */}
+        <div className="w-[100vw]  firstInnerChild2 font-custombold9 scale-90 h-full flex justify-around items-center text-zinc-50  bg-zinc-950">
+          <div className=" w-[40%] justify-center flex flex-col space-y-3  ">
+            <img
+              className="w-[80%] mx-auto rounded-md"
+              src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+              alt=""
+            />
+            <div className="flex gap-x-4 justify-end">
+              <img
+                className="w-1/2 h-44 block rounded-md "
+                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                alt=""
+              />
+              <img
+                className="w-1/2 h-44 block rounded-md scale-90"
+                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="  w-[40%]  ">
+            <h1 className="text-4xl font-custombold6">Movie Streaming App</h1>
+            <p className="text-xl md:mt-6 leading-tight tracking-tight">
+              {" "}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis id aperiam fugiat a porro voluptatibus, quae
+              accusantium beatae accusamus impedit doloremque alias laudantium
+              quis voluptatum provident laboriosam eveniet, in iusto?
+            </p>
+          </div>
         </div>
       </div>
-      <div className="h-1/2 w-screen bg-zinc-50 overflow-hidden  absolute bottom-0 bottombox z-40">
-        <div className="absolute -top-10 lg:-top-[133px]  left-[50%] btmh translate-x-[-50%]">
-          <h1 className="text-[15vw] font-bold text-center ">projects</h1>
+      <div className="h-1/2 w-screen bg-zinc-50 overflow-hidden    absolute bottom-0 bottombox z-40">
+        <div className="absolute -top-10 lg:-top-[134px]  left-[50%] btmh translate-x-[-50%]">
+          <h1 className="text-[15vw] font-bold text-center  ">projects</h1>
         </div>
       </div>
     </div>

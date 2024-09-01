@@ -1,5 +1,4 @@
-import React from "react";
-import LocomotiveScroll from "locomotive-scroll";
+import React, { useEffect } from "react";
 
 import Header from "./Componenets/Header";
 import About from "./Componenets/About";
@@ -8,11 +7,16 @@ import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
 import AboutMe from "./Componenets/AboutMe.tsx";
 import CV from "./Componenets/CV.tsx";
-
-//import "node_modules/locomotive-scroll/dist/locomotive-scroll";
+import MobileProjects from "./Componenets/MobileProjects.tsx";
+import MblProjContainer from "./Componenets/MblProjContainer.tsx";
 
 const App = () => {
-  const locomotiveScroll = new LocomotiveScroll();
+  // useEffect(() => {
+  //   (async () => {
+  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  //     const locomotiveScroll = new LocomotiveScroll();
+  //   })();
+  // }, []);
 
   return (
     <div className=" ">
@@ -24,7 +28,7 @@ const App = () => {
       <CV />
 
       <Contact />
-      <div className="h-screen"></div>
+      <MblProjContainer />
     </div>
   );
 };
