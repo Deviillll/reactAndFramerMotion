@@ -12,28 +12,28 @@ const data = [
     title: "LinkedIn",
   },
   {
-    title: "Twitter",
+    title: "github",
   },
 ];
 
 const Projects = () => {
   return (
-    <div className="flex relative flex-col h-[100vh] bg-neutral-50 py-10  md:h-[120vh] font-custombold8 uppercase   w-full  justify-center items-center">
+    <div className="flex relative flex-col h-[80vh] md:bg-neutral-50 md:py-10  md:h-[120vh] font-custombold8 uppercase   w-full  justify-center items-center">
       <div className="absolute w-10 h-10 transition-colors ease-in-out duration-150 bg-center bg-cover rounded-full top-0 left-0 hidden md:block"></div>
       {data.map((item, index) => (
         <div
           key={index}
-          className={`flex cursor-pointer border-black relative forEach flex-col justify-center items-start h-[15vh] md:h-[20vh] w-[80%] border-b ${
+          className={`flex cursor-pointer border-zinc-50 md:border-black relative forEach flex-col justify-center items-start h-[12vh] md:h-[20vh] w-[80%] border-b ${
             index === 0 && "border-t"
           } `}
         >
           <div
             id="parent"
-            className="flex w-full h-full justify-between  items-center text-zinc-950 group sm:px-3 px-2 md:px-5 lg:px-10"
+            className="flex w-full h-full justify-between  items-center text-zinc-50 md:text-zinc-950 group sm:px-3 px-2 md:px-5 lg:px-10"
           >
             <div
               id="heading"
-              className=" h-full w-[23%] flex items-center group-hover:text-white z-10 transition-colors duration-300 ease-in-out group-hover:font-bold"
+              className=" h-full w-[23%] flex items-center group-hover:text-black md:group-hover:text-white z-10 transition-colors duration-300 ease-in-out group-hover:font-bold"
             >
               <h1 className="text-2xl md:text-4xl  font-bold ">{item.title}</h1>
             </div>

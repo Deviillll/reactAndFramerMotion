@@ -7,21 +7,19 @@ import Contact from "./Componenets/Contact";
 import Projects from "./Componenets/Projects.tsx";
 import AboutMe from "./Componenets/AboutMe.tsx";
 import CV from "./Componenets/CV.tsx";
-import MobileProjects from "./Componenets/MobileProjects.tsx";
 import MblProjContainer from "./Componenets/MblProjContainer.tsx";
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
+import Marque from "./Componenets/Marque.tsx";
+import Skills from "./Componenets/Skills.tsx";
 
 const App = () => {
-  // useEffect(() => {
-  //   (async () => {
-  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
-  //     const locomotiveScroll = new LocomotiveScroll();
-  //   })();
-  // }, []);
-
   return (
-    <div className=" ">
+    <div className="overflow-hidden ">
       <Header />
+      <Marque />
       <AboutMe />
+      <Skills />
 
       <About />
       <Projects />

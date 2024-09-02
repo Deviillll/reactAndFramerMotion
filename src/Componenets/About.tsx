@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 const About = () => {
   return (
-    <div className="md:h-[70vh] overflow-x-hidden h-[50vh] mb-6 md:py-16  relative items-center flex flex-col w-screen  justify-center ">
+    <div className="md:h-[75vh] overflow-x-hidden h-[55vh] mb-6 md:py-16  relative items-center flex flex-col w-screen  justify-center ">
       <VideoBox
         img1={
           "https://images.unsplash.com/photo-1723903818490-6cb447ad1f05?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

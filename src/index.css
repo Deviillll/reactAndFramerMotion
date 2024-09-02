@@ -90,10 +90,11 @@ body{
 
 #parent::before {
   transition: transform 0.5s ease-in-out;
-  @apply absolute bottom-0 left-0 w-full h-full bg-zinc-950 z-0 text-zinc-50 transform translate-y-full ;
+  @apply absolute bottom-0 left-0 w-full h-full bg-zinc-50 md:bg-zinc-950 z-0 text-zinc-50 transform translate-y-full ;
   content: "";
 }
 
 #parent:hover::before {
   @apply transform translate-y-0;
 }
+

@@ -31,20 +31,20 @@ const Header = () => {
   const container = useRef<HTMLDivElement>(null);
   const container2 = useRef<HTMLDivElement>(null);
 
-  // useGSAP(() => {
-  //   gsap.from(".textanime", {
-  //     duration: 2.5,
-  //     xPercent: -90,
+  useGSAP(() => {
+    gsap.from(".textanime", {
+      duration: 2.5,
+      xPercent: -90,
 
-  //     ease: "power4.out",
-  //   });
-  //   gsap.from(".btn", {
-  //     delay: 1.8,
-  //     xPercent: -50,
+      ease: "power4.out",
+    });
+    gsap.from(".btn", {
+      delay: 1.8,
+      xPercent: -50,
 
-  //     ease: "power4.out",
-  //   });
-  // });
+      ease: "power4.out",
+    });
+  });
 
   return (
     <div className="overflow-x-hidden">

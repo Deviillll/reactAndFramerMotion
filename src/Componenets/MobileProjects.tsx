@@ -2,8 +2,8 @@ import React from "react";
 
 const MobileProjects = () => {
   return (
-    <div className="flex uppercase lg:hidden flex-col justify-around mx-auto items-center overflow-hidden h-[90vh] w-[80vw]">
-      <div className="">
+    <div className="flex my-4 uppercase lg:hidden flex-col justify-around mx-auto items-center overflow-hidden h-[100vh] w-[80vw]">
+      <div className="my-4">
         <h1 className="text-3xl font-bold">food ordeing app</h1>
         <p className="text-lg tracking-tight leading-tight mt-3 ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
@@ -18,14 +18,14 @@ const MobileProjects = () => {
           src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
           alt=""
         />
-        <div className="flex gap-3 mt-2 w-full">
+        <div className="flex gap-2 my-6 w-full">
           <img
-            className="mx-auto w-1/2 rounded-md"
+            className=" w-1/2 rounded-md"
             src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
             alt=""
           />
           <img
-            className="mx-auto w-1/2 rounded-md"
+            className=" w-1/2 rounded-md"
             src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
             alt=""
           />
