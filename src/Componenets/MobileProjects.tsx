@@ -4,8 +4,10 @@ const MobileProjects = () => {
   return (
     <div className="flex my-4 uppercase lg:hidden flex-col justify-around mx-auto items-center overflow-hidden h-[100vh] w-[80vw]">
       <div className="my-4">
-        <h1 className="text-3xl font-bold">food ordeing app</h1>
-        <p className="text-lg tracking-tight leading-tight mt-3 ">
+        <h1 className="text-3xl font-custombold4 font-bold">
+          food ordeing app
+        </h1>
+        <p className="text-lg tracking-tight leading-tight text-md font-custombold8 mt-3 ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
           nihil maxime voluptas esse magnam commodi ex error ut sunt,
           doloremque, excepturi deserunt quidem, illum dignissimos sapiente

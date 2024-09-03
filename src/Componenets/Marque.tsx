@@ -6,55 +6,55 @@ gsap.registerPlugin(ScrollTrigger);
 
 const data = [
   {
-    title: "modern",
+    title: "react",
     color: "bg-red-500",
   },
   {
-    title: "responsive",
+    title: "next js",
     color: "bg-blue-500",
   },
   {
-    title: "creative",
+    title: "javascript",
     color: "bg-green-500",
   },
   {
-    title: "innovative",
+    title: "tailwind css",
     color: "bg-yellow-500",
   },
   {
-    title: "dynamic",
+    title: "html5",
     color: "bg-purple-500",
   },
   {
-    title: "unique",
+    title: "node js",
     color: "bg-pink-500",
   },
   {
-    title: "versatile",
+    title: "mongodb",
     color: "bg-indigo-500",
   },
   {
-    title: "professional",
+    title: "express js",
     color: "bg-gray-500",
   },
   {
-    title: "elegant",
+    title: "typescript",
     color: "bg-blue-500",
   },
   {
-    title: "creative",
+    title: "gsap",
     color: "bg-green-500",
   },
   {
-    title: "innovative",
+    title: "framer motion",
     color: "bg-yellow-500",
   },
   {
-    title: "dynamic",
+    title: "python",
     color: "bg-purple-500",
   },
   {
-    title: "unique",
+    title: "django",
     color: "bg-pink-500",
   },
 ];
@@ -106,12 +106,12 @@ const Marque = () => {
             }
              ${
                index === 0
-                 ? "translate-x-[-30%]"
+                 ? "translate-x-[-10%]"
                  : index === 1
-                 ? "-translate-x-[45%]"
+                 ? "-translate-x-[25%]"
                  : index === 2
-                 ? "translate-x-[-60%]"
-                 : "translate-x-[-75%]"
+                 ? "translate-x-[-15%]"
+                 : "translate-x-[-30%]"
              }
             `}
           >
@@ -120,8 +120,8 @@ const Marque = () => {
                 key={itemIndex}
                 className="flex items-center h-full gap-5 whitespace-nowrap"
               >
-                <h1 className="text-5xl ">{item.title}</h1>
-                <div className={`w-10 h-10 rounded-full ${item.color}`}></div>
+                <h1 className="text-5xl font-custombold7">{item.title}</h1>
+                {/* <div className={`w-10 h-10 rounded-full ${item.color}`}></div> */}
               </div>
             ))}
           </div>

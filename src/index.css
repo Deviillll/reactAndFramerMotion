@@ -98,3 +98,9 @@ body{
   @apply transform translate-y-0;
 }
 
+.skills h1{
+  @apply  text-zinc-50 border-gray-50 md:text-zinc-950 border md:border-zinc-950  rounded-full px-5 py-4  capitalize text-center transition-all duration-75 ease-in-out; 
+}
+.skills h1{
+filter: blur(20px);
+}

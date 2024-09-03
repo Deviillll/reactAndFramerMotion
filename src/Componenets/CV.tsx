@@ -68,7 +68,7 @@ const CV = () => {
   return (
     <div
       ref={container}
-      className="flex  pb-10 md:pb-0 flex-col justify-center items-center h-[110vh] md:h-[210vh] w-screen relative"
+      className="flex  pb-10  flex-col justify-center items-center h-[110vh] md:h-[210vh] w-screen relative"
     >
       <div className="md:h-[35vh] h-[20vh] md:w-[40vw] w-[80vw] flex flex-col justify-center items-center parent ">
         {/* fist */}
@@ -107,7 +107,7 @@ const CV = () => {
         </div>
       </div>
       <div className="">
-        <h1 className="md:text-4xl text-2xl font-bold head z-30 relative bottom-0 opacity-0">
+        <h1 className="md:text-4xl text-2xl font-custombold8 capitalize font-bold head z-30 relative bottom-0 opacity-0">
           Created by Hammad
         </h1>
       </div>

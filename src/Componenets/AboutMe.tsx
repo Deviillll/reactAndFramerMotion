@@ -85,7 +85,7 @@ const AboutMe = () => {
           <h1 className="md:mt-2 lg:mt-4 sm6 opacity-30">
             Let's create something amazing together.{" "}
           </h1>
-          <h1 className="md:mt-2 lg:mt-4 cursor-pointer sm7 opacity-30">
+          <h1 className="md:mt-2 lg:mt-4 mt-4 cursor-pointer sm7 opacity-30">
             <a className="text-purple-300 font-custombold8 " href="#">
               Contact me ↗
             </a>

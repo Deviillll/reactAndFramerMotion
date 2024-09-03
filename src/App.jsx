@@ -12,12 +12,13 @@ import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import Marque from "./Componenets/Marque.tsx";
 import Skills from "./Componenets/Skills.tsx";
+import ContactComponent from "./Componenets/ContactNow.tsx";
 
 const App = () => {
   return (
     <div className="overflow-hidden ">
       <Header />
-      <Marque />
+      {/* <Marque /> */}
       <AboutMe />
       <Skills />
 
@@ -27,6 +28,7 @@ const App = () => {
 
       <Contact />
       <MblProjContainer />
+      <ContactComponent />
     </div>
   );
 };
