@@ -7,7 +7,7 @@ const MobileProjects = () => {
         <h1 className="text-3xl font-custombold4 font-bold">
           food ordeing app
         </h1>
-        <p className="text-lg tracking-tight leading-tight text-md font-custombold8 mt-3 ">
+        <p className="text-md tracking-tight leading-tight text-md font-custombold8 mt-3 ">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
           nihil maxime voluptas esse magnam commodi ex error ut sunt,
           doloremque, excepturi deserunt quidem, illum dignissimos sapiente

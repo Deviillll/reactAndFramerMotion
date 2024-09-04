@@ -3,77 +3,68 @@ import { motion } from "framer-motion";
 
 const ContactComponent = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center  md:bg-zinc-50">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="md:max-w-lg  w-[90vw] lg:w-[70vw] xl:w-[100vw]  px-8 lg:px-24 py-14 bg-zinc-950  rounded-md  shadow-sm font-custombold4 uppercase shadow-zinc-950"
-      >
-        <h2 className="text-4xl font-bold mb-6 text-center">Contact Me</h2>
-        <form className="space-y-6 w-full">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="space-y-2"
-          >
-            <label htmlFor="name" className="block  text-sm font-medium ">
-              Name
-            </label>
+    <div className="w-screen h-screen bg-zinc-50 text-zinc-950 flex md:flex-row flex-col md:px-8 px-5 py-5  md:justify-center">
+      {/* heading */}
+      <div className="flex-1 w-1/2   md:flex-col text-2xl mt-20 md:text-[4.5vw] uppercase  font-custombold3 ">
+        <div className="md:-space-y-2 tracking-tight leading-tight">
+          <h1>lets create</h1>
+          <h1>something </h1>
+          <h1>cool!</h1>
+        </div>
+        <div className="lowercase text-2xl md:text-4xl underline underline-offset-8 mt-7 font-custombold8 font-normal">
+          <a href="mailto:hammadtariq7777@gmail.com">
+            hammadtariq7777@gmail.com
+          </a>
+        </div>
+      </div>
+      {/* inputs */}
+      <div className="flex-1 md:w-1/2 flex flex-col h-full w-full     md:justify-center">
+        {/* note */}
+        <div>
+          <h1 className="font-custombold3 uppercase">Send me a message</h1>
+        </div>
+        <div className="flex flex-col space-y-4 w-full px-2 ">
+          <div>
             <input
+              className="py-4 w-full rounded-sm focus:outline-none capitalize focus:border-purple-400 bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
               type="text"
-              id="name"
-              name="name"
-              placeholder="John Doe"
-              required
-              className="w-full px-4 py-2 text-zinc-950 border border-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-zinc-950"
+              placeholder="what's your name?"
             />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="space-y-2"
-          >
-            <label htmlFor="email" className="block  text-sm font-medium ">
-              Email
-            </label>
+          </div>
+          <div>
             <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="jhondoe@gmail.com"
-              required
-              className="w-full px-4 py-2 border text-zinc-950 border-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900"
+              className="py-4 w-full rounded-sm focus:outline-none focus:border-purple-400 capitalize  bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
+              type="text"
+              placeholder="what' your company called?"
             />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="space-y-2"
-          >
-            <label htmlFor="message" className="block  text-sm font-medium ">
-              Message
-            </label>
+          </div>
+          <div>
+            <input
+              className="py-4 w-full rounded-sm focus:outline-none focus:border-purple-400 capitalize  bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
+              type="text"
+              placeholder="what's your email?"
+            />
+          </div>
+          <div>
+            <input
+              className="py-4 w-full rounded-sm focus:outline-none focus:border-purple-400 capitalize  bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
+              type="text"
+              placeholder="what service you looking for?"
+            />
+          </div>
+          <div>
             <textarea
-              id="message"
-              name="message"
-              required
-              className="w-full text-zinc-950 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900"
-            ></textarea>
-          </motion.div>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className="text-sm text-center md:text-xl border uppercase flex-col lg:text-3xl w-full flex mt-5 md:mt-4 lg:mt-3 items-center rounded-md tracking-tight bg-zinc-50 px-2 md:px-3 lg:px-4 lg:py-2 xl:px-5 xl:py-2 font-custombold9  py-3 text-zinc-950/90 hover:bg-zinc-950 hover:text-zinc-50 transition-all ease-in-out duration-150"
-            type="submit"
-          >
-            contact now
-          </motion.button>
-        </form>
-      </motion.div>
+              className="py-4 w-full rounded-sm focus:outline-none bg-zinc-50 focus:border-purple-400 capitalize  placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
+              placeholder="what's your message?"
+            />
+          </div>
+          <div>
+            <button className="  capitalize  text-zinc-950 border hover:bg-black hover:text-white transition-colors ease-in-out duration-300 border-zinc-950  rounded-full px-5 py-4">
+              send message
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

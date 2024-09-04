@@ -60,6 +60,17 @@ body{
  src: url('./assets/fonts/HelveticaNowText-Regular.ttf');
 
 }
+@font-face {
+  font-family:"Bold1";
+ src: url('./assets/fonts/Rejouice-Headline.ttf');
+
+}
+@font-face {
+  font-family:"Bold0";
+ src: url('./assets/fonts/NBInternationalProBoo.ttf');
+
+}
+
 
 
 

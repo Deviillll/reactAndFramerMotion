@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoBox = ({ img1, img2, head1, head2 }) => {
   return (
-    <div className=" font-custombold2 font-bold overflow-hidden ">
+    <div className=" font-custombold1 font-bold overflow-hidden ">
       {" "}
       <div className="flex justify-around items-center w-[80vw] group  ">
         <img

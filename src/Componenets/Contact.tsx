@@ -91,7 +91,7 @@ const Contact = () => {
 
   return (
     <div
-      className="relative uppercase overflow-hidden main  font-custombold2  hidden lg:block lg:h-[100vh] text-black bg-zinc-500"
+      className="relative uppercase overflow-hidden main  font-custombold1  hidden lg:block lg:h-[100vh] text-black bg-zinc-500"
       ref={container2}
     >
       <div className="h-1/2  bg-zinc-50 overflow-hidden absolute top-0 topbox z-40 w-screen">

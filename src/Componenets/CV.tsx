@@ -68,7 +68,7 @@ const CV = () => {
   return (
     <div
       ref={container}
-      className="flex  pb-10  flex-col justify-center items-center h-[110vh] md:h-[210vh] w-screen relative"
+      className="flex  pb-10  flex-col justify-center items-center h-[150vh] md:h-[250vh] w-screen relative"
     >
       <div className="md:h-[35vh] h-[20vh] md:w-[40vw] w-[80vw] flex flex-col justify-center items-center parent ">
         {/* fist */}

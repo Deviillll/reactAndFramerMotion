@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         custombold: ["Bold"],
+        custombold0: ["Bold0"],
+        custombold1: ["Bold1"],
         custombold2: ["Bold2"],
         custombold3: ["Bold3"],
         custombold4: ["Bold4"],

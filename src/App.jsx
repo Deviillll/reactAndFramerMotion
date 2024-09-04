@@ -13,6 +13,7 @@ import "lenis/dist/lenis.css";
 import Marque from "./Componenets/Marque.tsx";
 import Skills from "./Componenets/Skills.tsx";
 import ContactComponent from "./Componenets/ContactNow.tsx";
+import FooterComponent from "./Componenets/Footer.tsx";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <Contact />
       <MblProjContainer />
       <ContactComponent />
+      <FooterComponent />
     </div>
   );
 };

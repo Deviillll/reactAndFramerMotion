@@ -122,16 +122,16 @@ const Skills = () => {
       <motion.div className="flex h-screen md:h-[130vh] w-screen   justify-center items-center overflow-hidden">
         <div
           ref={dragConstraints}
-          className=" skills  px-2 md:px-0 flex items-center md:gap-8 gap-5 flex-wrap-reverse  w-full md:w-[60vw] h-[50%] font-custombold8 justify-center md:text-3xl  "
+          className=" skills  px-2 md:px-0 flex items-center md:gap-8 gap-5 flex-wrap-reverse  w-full md:w-[60vw] h-[50%] font-custombold0 justify-center md:text-3xl  "
         >
           {data.map((item, index) => (
             <motion.h1
               key={item.id}
               id={item.id}
-              drag
-              dragConstraints={dragConstraints}
-              dragElastic={0.1}
-              whileDrag={{ scale: 1.1 }}
+              // drag
+              // dragConstraints={dragConstraints}
+              // dragElastic={0.1}
+              // whileDrag={{ scale: 1.1 }}
               className="cursor-pointer"
             >
               {item.name}
