@@ -9,17 +9,18 @@ import AboutMe from "./Componenets/AboutMe.tsx";
 import CV from "./Componenets/CV.tsx";
 import MblProjContainer from "./Componenets/MblProjContainer.tsx";
 import Lenis from "lenis";
-import "lenis/dist/lenis.css";
+
 import Marque from "./Componenets/Marque.tsx";
 import Skills from "./Componenets/Skills.tsx";
 import ContactComponent from "./Componenets/ContactNow.tsx";
 import FooterComponent from "./Componenets/Footer.tsx";
+import Testing from "./Componenets/Testing.tsx";
 
 const App = () => {
   return (
     <div className="overflow-hidden ">
       <Header />
-      {/* <Marque /> */}
+
       <AboutMe />
       <Skills />
 
@@ -31,6 +32,7 @@ const App = () => {
       <MblProjContainer />
       <ContactComponent />
       <FooterComponent />
+      {/* <Testing /> */}
     </div>
   );
 };

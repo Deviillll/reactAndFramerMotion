@@ -40,16 +40,16 @@ const Contact = () => {
           "name"
         )
         .to(
-          ".toph",
+          ".line1",
           {
-            top: "80%",
+            translateY: "75%",
           },
           "name"
         )
         .to(
-          ".btmh",
+          ".line2",
           {
-            top: "-80%",
+            translateY: "-75%",
           },
           "name"
         )
@@ -91,24 +91,22 @@ const Contact = () => {
 
   return (
     <div
-      className="relative uppercase overflow-hidden main  font-custombold1  hidden lg:block lg:h-[100vh] text-black bg-zinc-500"
+      className="relative uppercase  main  font-custombold0 overflow-hidden  hidden lg:block lg:h-screen text-black bg-zinc-500"
       ref={container2}
     >
-      <div className="h-1/2  bg-zinc-50 overflow-hidden absolute top-0 topbox z-40 w-screen">
-        <div className="absolute -bottom-12  lg:bottom-[-155px] toph left-[50%] translate-x-[-50%]">
-          <h1 className="text-[15vw] font-bold text-center  ">projects</h1>
-        </div>
+      <div className="h-1/2 absolute topbox overflow-hidden top-0 z-40 w-full left-[-50%] translate-x-[50%] bg-zinc-50 text-center justify-center items-end flex">
+        <h1 className="translate-y-[10.5vw] line1 font-bold text-[15vw]">
+          projects
+        </h1>
       </div>
       <div
         className="h-screen hidden lg:flex w-[200vw] bg-zinc-950 innerContainer overflow-hidden justify-between  "
         ref={innerContainer}
       >
-        {/* first inner child */}
         <div className="w-[100vw]  scale-90 overflow-hidden firstInnerChild font-custombold8 h-full flex justify-around items-center text-zinc-50  bg-zinc-950">
           <div className=" w-[40%]  ">
             <h1 className="text-4xl font-custombold6 ">Food Ordering app</h1>
             <p className="text-lg md:mt-6 leading-tight tracking-tight">
-              {" "}
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reiciendis id aperiam fugiat a porro voluptatibus, quae
               accusantium beatae accusamus impedit doloremque alias laudantium
@@ -135,7 +133,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* second inner child */}
+
         <div className="w-[100vw]  firstInnerChild2 font-custombold8 scale-90  h-full flex justify-around items-center text-zinc-50  bg-zinc-950">
           <div className=" w-[40%] justify-center flex flex-col space-y-3  ">
             <img
@@ -159,7 +157,6 @@ const Contact = () => {
           <div className="  w-[40%]  ">
             <h1 className="text-4xl font-custombold6">Movie Streaming App</h1>
             <p className="text-lg md:mt-6 leading-tight tracking-tight ">
-              {" "}
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reiciendis id aperiam fugiat a porro voluptatibus, quae
               accusantium beatae accusamus impedit doloremque alias laudantium
@@ -168,10 +165,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="h-1/2 w-screen bg-zinc-50 overflow-hidden    absolute bottom-0 bottombox z-40">
-        <div className="absolute -top-10 lg:-top-[134px]  left-[50%] btmh translate-x-[-50%]">
-          <h1 className="text-[15vw] font-bold text-center  ">projects</h1>
-        </div>
+      <div className="h-1/2 absolute bottom-0 w-full bottombox overflow-hidden z-40 bg-zinc-50 left-[50%] translate-x-[-50%] text-center flex justify-center items-start">
+        <h1 className="-translate-y-[12vw] font-bold line2  text-[15vw]">
+          projects
+        </h1>
       </div>
     </div>
   );

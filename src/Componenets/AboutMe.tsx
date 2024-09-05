@@ -26,7 +26,9 @@ const AboutMe = () => {
         .to(".sm2", { opacity: 1 })
         .to(".sm3", { opacity: 1 })
         .to(".sm4", { opacity: 1 })
+
         .to(".sm5", { opacity: 1 })
+        .to(".sm55", { opacity: 1 })
         .to(".sm6", { opacity: 1 })
         .to(".sm7", { opacity: 1 });
 
@@ -53,6 +55,7 @@ const AboutMe = () => {
         .to(".line2", { width: "100%" })
         .to(".line3", { width: "100%" })
         .to(".line4", { width: "100%" })
+        .to(".line55", { width: "100%" })
         .to(".line5", { width: "100%" })
         .to(".line6", { width: "100%" });
 
@@ -73,15 +76,18 @@ const AboutMe = () => {
         <div className="lg:text-3xl xl:text-4xl text-xl md:text-2xl space-y-2  absolute left-[5%] md:text-neutral-950">
           <h1 className="sm1 opacity-30"> Hi! I'm Hammad,</h1>
           <h1 className="sm2 opacity-30">
-            a Computer Science student and software engineer.
+            a Computer Science student and software
           </h1>
           <h1 className="sm3 opacity-30">
-            love creating animated and modern applications
+            engineer. love creating animated and modern
           </h1>
           <h1 className="sm4 opacity-30">
-            combining my skills in both front-end and back-end development
+            applications combining my skills in both
           </h1>
-          <h1 className="sm5 opacity-30">to build dynamic web applications.</h1>
+          <h1 className="sm5 opacity-30">
+            front-end and back-end development to
+          </h1>
+          <h1 className="sm55 opacity-30">build dynamic web applications.</h1>
           <h1 className="md:mt-2 lg:mt-4 sm6 opacity-30">
             Let's create something amazing together.{" "}
           </h1>
@@ -97,16 +103,19 @@ const AboutMe = () => {
             Hi! I'm Hammad,
           </h1>
           <h1 className="line1 whitespace-nowrap overflow-hidden w-0">
-            a Computer Science student and software engineer.
+            a Computer Science student and software
           </h1>
           <h1 className="line2 whitespace-nowrap overflow-hidden w-0">
-            love creating animated and modern applications
+            engineer. love creating animated and modern
           </h1>
           <h1 className="line3 whitespace-nowrap overflow-hidden w-0">
-            combining my skills in both front-end and back-end development
+            applications combining my skills in both
           </h1>
           <h1 className="line4 whitespace-nowrap overflow-hidden w-0">
-            to build dynamic web applications.
+            front-end and back-end development to
+          </h1>
+          <h1 className="line55 whitespace-nowrap overflow-hidden w-0">
+            build dynamic web applications.
           </h1>
           <h1 className="line5 whitespace-nowrap md:mt-2 lg:mt-4 overflow-hidden w-0">
             Let's create something amazing together.

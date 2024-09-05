@@ -62,7 +62,7 @@ const FooterComponent = () => {
   return (
     <footer
       ref={container}
-      className="w-screen h-[60vh] md:h-screen px-4 md:px-6 pt-3"
+      className="w-screen h-[60vh] md:h-[85vh] lg:h-screen px-4 md:px-6 pt-3"
     >
       <div className="lg:space-y-40 space-y-20">
         {/* upper part */}
@@ -101,7 +101,7 @@ const FooterComponent = () => {
           </div>
         </div>
         {/* lower part */}
-        <div className="flex flex-wrap space-y-4 md:flex-nowrap md:justify-between px-4 text-sm font-custombold0 uppercase">
+        <div className="flex flex-wrap space-y-4 lg:flex-nowrap lg:justify-between px-4 text-sm font-custombold0 uppercase">
           <div className="md:w-[60%] w-[100%]">
             <h1>Lahore, Pakistan</h1>
           </div>
@@ -114,8 +114,8 @@ const FooterComponent = () => {
         </div>
         {/* last part */}
       </div>
-      <div className="relative overflow-hidden w-full h-full">
-        <div className="w-full text-[22vw] text-center font-custombold1 font-bold">
+      <div className="relative overflow-hidden w-full lg:h-[50%] ">
+        <div className="w-full text-[20vw]  text-center font-custombold1 font-bold">
           <span
             className="name -translate-y-[70%]"
             style={{ display: "inline-block" }}
