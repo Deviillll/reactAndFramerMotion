@@ -25,14 +25,12 @@ const App = () => {
       <Skills />
 
       <About />
-      <Projects />
       <CV />
-
       <Contact />
-      <MblProjContainer />
+      <Projects />
       <ContactComponent />
+
       <FooterComponent />
-      {/* <Testing /> */}
     </div>
   );
 };

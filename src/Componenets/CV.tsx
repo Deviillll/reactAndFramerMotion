@@ -21,7 +21,7 @@ const CV = () => {
           start: "20% 30%",
           end: "90% 70%",
           scrub: 2,
-          // markers: true,
+          markers: true,
           // pin: true,
         },
       });

@@ -93,9 +93,9 @@ const Header = () => {
           <h1 className=" md:ml-10 flex   textanime">websites </h1>
           <div className="md:ml-10 lg:ml-12  btn">
             <button className=" text-sm text-center md:text-xl flex-col lg:text-3xl uppercase flex mt-5 md:mt-4 lg:mt-3 items-center rounded-md tracking-tight bg-zinc-50 px-2 md:px-3 lg:px-4 lg:py-2 xl:px-5 xl:py-3 font-custombold6 py-3 text-zinc-950/90 hover:scale-110 hover:bg-purple-300/90 hover:text-gray-50 transition-all ease-in-out duration-150 ">
-              <div className="flex gap-x-3 items-center justify-center">
+              <div className="flex gap-x-2 items-center justify-center">
                 <span className="">
-                  <FiDownload className="text-purple-500  " />
+                  <FiDownload className="text-purple-400  " />
                 </span>
                 download cv
               </div>

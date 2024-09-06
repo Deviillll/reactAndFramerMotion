@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ContactComponent = () => {
   return (
-    <div className="w-screen h-screen bg-zinc-50 text-zinc-950 flex lg:flex-row flex-col md:px-8 px-5 py-5  md:justify-center">
+    <div className="w-screen h-screen bg-zinc-50 text-zinc-950 flex lg:flex-row flex-col md:px-8 px-5 pb-7 lg:py-5  md:justify-center">
       {/* heading */}
       <div className="flex-1 w-1/2   md:flex-col text-2xl mt-20 md:text-[4.5vw] uppercase  font-custombold3 ">
         <div className="md:-space-y-2 tracking-tight leading-tight">
