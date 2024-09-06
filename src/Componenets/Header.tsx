@@ -48,17 +48,17 @@ const Header = () => {
   });
 
   return (
-    <div className="overflow-hidden">
+    <div id="home" className="overflow-hidden">
       <div
         className="h-[80vh] md:h-[80vh]  lg:h-[90vh] w-full relative text-zinc-50 "
         ref={container2}
       >
         <div
-          className="uppercase overflow-hidden  w-screen text-[9vw] lg:text-[6.5vw] leading-tight font-custombold2  sm:font-custombold1 md:font-bold  lg:-space-y-2 xl:-space-y-3 flex flex-col md:ml-10 ml-10 justify-center md:mt-[6vh] lg:mt-[10vh]  sm:mt-10 space-y-1  h-[80vh] md:h-[80vh] md:w-screen"
+          className="uppercase overflow-hidden  w-screen text-[9vw] lg:text-[6.5vw] leading-tight font-custombold1  md:font-bold  lg:-space-y-2 xl:-space-y-3 flex flex-col md:ml-10 ml-10 justify-center md:mt-[6vh] lg:mt-[10vh]  sm:mt-10 space-y-1  h-[80vh] md:h-[80vh] md:w-screen"
           ref={container}
         >
           <h1 className=" md:ml-10 textanime lg:w-full w-[30vw]">
-            Hi Im&nbsp;
+            Hi I&apos;m&nbsp;
             <span
               style={{ backgroundImage: `url(${bg2})` }}
               className="bg-clip-text text-purple-300/80 bg-cover bg-center tracking-wide"

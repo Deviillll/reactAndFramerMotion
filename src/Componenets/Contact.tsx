@@ -91,8 +91,9 @@ const Contact = () => {
 
   return (
     <div
-      className="relative uppercase  main  font-custombold3 lg:font-custombold0 overflow-hidden    h-screen text-black bg-zinc-500"
+      className="relative  uppercase  main font-custombold0 overflow-hidden    h-screen text-black "
       ref={container2}
+      id="projects"
     >
       <div className="h-1/2 absolute topbox overflow-hidden top-0 z-40 w-full left-[-50%] translate-x-[50%] bg-zinc-50 text-center justify-center items-end flex">
         <h1 className="translate-y-[10.5vw] line1 font-bold text-[15vw]">
@@ -103,11 +104,9 @@ const Contact = () => {
         className="h-screen flex w-[200vw] bg-zinc-950 innerContainer overflow-hidden justify-between  "
         ref={innerContainer}
       >
-        <div className="w-[100vw]  scale-90 overflow-hidden firstInnerChild font-custombold8 h-ful flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
+        <div className="w-[100vw]  scale-90 overflow-hidden firstInnerChild font-custombold0 h-ful flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
           <div className=" lg:w-[40%] px-4 ">
-            <h1 className="text-4xl font-custombold6 my-4 ">
-              Food Ordering app
-            </h1>
+            <h1 className="text-4xl  font-bold my-4 ">Food Ordering app</h1>
             <p className="text-lg md:mt-6 leading-tight tracking-tight">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reiciendis id aperiam fugiat a porro voluptatibus, quae
@@ -136,7 +135,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-[100vw]  firstInnerChild2 font-custombold8 scale-90  h-full flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
+        <div className="w-[100vw]  firstInnerChild2 font-custombold0 scale-90  h-full flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
           <div className=" lg:w-[40%] justify-center flex flex-col space-y-3 px-2 ">
             <img
               className="w-[80%] mx-auto rounded-md"
@@ -157,9 +156,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="  lg:w-[40%] px-3 ">
-            <h1 className="text-4xl font-custombold6 my-4">
-              Movie Streaming App
-            </h1>
+            <h1 className="text-4xl  font-bold my-4">Movie Streaming App</h1>
             <p className="text-lg md:mt-6 leading-tight tracking-tight ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Reiciendis id aperiam fugiat a porro voluptatibus, quae

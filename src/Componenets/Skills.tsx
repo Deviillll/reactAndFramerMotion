@@ -132,7 +132,7 @@ const Skills = () => {
               // dragConstraints={dragConstraints}
               // dragElastic={0.1}
               // whileDrag={{ scale: 1.1 }}
-              className="cursor-pointer"
+              className="cursor-pointer hover:bg-zinc-950 hover:text-zinc-50 transition-colors ease-in-out duration-500"
             >
               {item.name}
             </motion.h1>

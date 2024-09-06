@@ -3,15 +3,18 @@ import { motion } from "framer-motion";
 
 const ContactComponent = () => {
   return (
-    <div className="w-screen h-screen bg-zinc-50 text-zinc-950 flex lg:flex-row flex-col md:px-8 px-5 pb-7 lg:py-5  md:justify-center">
+    <div
+      className="w-screen h-screen bg-zinc-50 text-zinc-950 flex lg:flex-row flex-col md:px-8 px-5 pb-7 lg:py-5  md:justify-center"
+      id="contact"
+    >
       {/* heading */}
-      <div className="flex-1 w-1/2   md:flex-col text-2xl mt-20 md:text-[4.5vw] uppercase  font-custombold3 ">
-        <div className="md:-space-y-2 tracking-tight leading-tight">
+      <div className="flex-1 w-1/2   md:flex-col text-2xl mt-20 md:text-[4.5vw] uppercase  font-custombold0 ">
+        <div className="md:-space-y-2  leading-tight">
           <h1>lets create</h1>
           <h1>something </h1>
           <h1>cool!</h1>
         </div>
-        <div className="lowercase text-2xl md:text-4xl underline underline-offset-8 mt-7 font-custombold8 font-normal">
+        <div className="lowercase text-2xl md:text-4xl underline underline-offset-8 mt-7 font-custombold1 font-normal">
           <a href="mailto:hammadtariq7777@gmail.com">
             hammadtariq7777@gmail.com
           </a>
@@ -21,7 +24,7 @@ const ContactComponent = () => {
       <div className="flex-1 md:w-1/2 flex flex-col h-full w-full     md:justify-center">
         {/* note */}
         <div>
-          <h1 className="font-custombold3 uppercase">Send me a message</h1>
+          <h1 className="font-custombold0 uppercase">Send me a message</h1>
         </div>
         <div className="flex flex-col space-y-4 w-full px-2 ">
           <div>

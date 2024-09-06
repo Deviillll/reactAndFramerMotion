@@ -19,10 +19,13 @@ const App = () => {
 
       <AboutMe />
       <Skills />
+      {/* hover animation section */}
 
       <About />
-      <CV />
+      {/* projects */}
       <Contact />
+      <CV />
+      {/* contact */}
       <Projects />
       <ContactComponent />
 

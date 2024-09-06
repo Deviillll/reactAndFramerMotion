@@ -35,7 +35,7 @@ const Navbar = () => {
         variants={varients}
         className={`fixed lg:top-0 top-2 right-1 bottom-0  w-[80vw] sm:w-[70vw] z lg:w-[35vw] bg-gray-50`}
       >
-        <Links />
+        <Links setOpen={setOpen} />
       </motion.div>
       <Btn setOpen={setOpen} />
     </motion.div>

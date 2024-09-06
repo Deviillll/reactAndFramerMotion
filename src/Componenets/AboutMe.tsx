@@ -70,6 +70,7 @@ const AboutMe = () => {
     <div
       className="md:h-[70vh]  lg:h-[100vh] w-screen h-[60vh] overflow-x-hidden  md:bg-zinc-50 "
       ref={container}
+      id="aboutMe"
     >
       <div className="flex flex-col justify-center px-5 tracking-tighter  font-custombold0  mt-6 md:mt-0  items-center md:w-full h-[40vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] xl:h-[100vh] overflow-x-hidden">
         {/* 1st div */}

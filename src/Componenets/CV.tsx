@@ -6,7 +6,7 @@ import React from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 //@ts-ignore
-import myImage from "/2.png";
+import myImage from "/cv.png";
 
 const CV = () => {
   const container = useRef<HTMLDivElement>(null);
@@ -18,21 +18,21 @@ const CV = () => {
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: container.current,
-          start: "20% 30%",
-          end: "90% 70%",
+          start: "80% 30%",
+          end: "150% 60%",
           scrub: 2,
-          markers: true,
+          //markers: true,
           // pin: true,
         },
       });
       timeline
         .to(".img2", { rotateX: "0deg", duration: 2 })
         .to(".img3", { rotateX: "0deg", duration: 2 })
-        .to(".parent", { marginTop: "110vh", duration: 1 })
+        .to(".parent", { marginTop: "100vh", duration: 1 })
         .to(".head", { marginTop: "-25vh", opacity: 1, duration: 0.3 })
         .to(".overlay", { opacity: 1 })
         .to(".pic", { filter: "grayscale(1)" })
-        .to(".parent", { scale: 0.8, delay: 0.4, duration: 2 });
+        .to(".parent", { scale: 0.7, delay: 0.4, duration: 2 });
 
       return () => {
         // Cleanup code if needed
@@ -43,10 +43,10 @@ const CV = () => {
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: container.current,
-          start: "10% 40%",
-          end: "90% 80%",
+          start: "100% 40%",
+          end: "150% 60%",
           scrub: 2,
-          //markers: true,
+          markers: true,
           // pin: true,
         },
       });
@@ -68,7 +68,7 @@ const CV = () => {
   return (
     <div
       ref={container}
-      className="flex  pb-10  flex-col justify-center items-center h-[150vh] md:h-[250vh] w-screen relative"
+      className="flex  lg:pb-32 flex-col justify-center items-center h-[150vh] md:h-[170vh] w-screen relative"
     >
       <div className="md:h-[35vh] h-[20vh] md:w-[40vw] w-[80vw] flex flex-col justify-center items-center parent ">
         {/* fist */}

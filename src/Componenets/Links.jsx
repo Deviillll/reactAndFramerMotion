@@ -14,8 +14,13 @@ const itemlist = {
   closed: { y: 50, opacity: 0 },
 };
 
-const Links = () => {
-  const items = ["home", "about", "services", "contact"];
+const Links = ({ setOpen }) => {
+  const items = [
+    { name: "home", link: "home" },
+    { name: "about", link: "aboutMe" },
+    { name: "projects", link: "projects" },
+    { name: "contact", link: "contact" },
+  ];
   return (
     <motion.div
       variants={varients}
@@ -27,10 +32,11 @@ const Links = () => {
           variants={itemlist}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.95 }}
-          href="#"
+          href={`#${item.link}`}
+          onClick={() => setOpen((prev) => !prev)}
           className="font-custombold3 font-bold text-2xl md:text-3xl text-zinc-950 uppercase"
         >
-          {item}
+          {item.name}
         </motion.a>
       ))}
     </motion.div>
