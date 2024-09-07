@@ -122,12 +122,12 @@ const Contact = () => {
             />
             <div className="flex gap-x-2 lg:gap-x-4 justify-end px-3">
               <img
-                className="w-1/2 h-44 block rounded-md "
+                className="md:w-1/2 w-[40%] md:h-44 h-36 block rounded-md "
                 src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
                 alt=""
               />
               <img
-                className="w-1/2 h-44 block rounded-md lg:scale-90"
+                className="md:w-1/2 w-[40%] md:h-44 h-36 block rounded-md lg:scale-90"
                 src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
                 alt=""
               />
@@ -144,12 +144,12 @@ const Contact = () => {
             />
             <div className="flex gap-x-2 lg:gap-x-4 justify-end">
               <img
-                className="w-1/2 h-44 block rounded-md "
+                className="md:w-1/2 md:h-44 w-[40%] h-36 block rounded-md "
                 src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
                 alt=""
               />
               <img
-                className="w-1/2 h-44 block rounded-md lg:scale-90"
+                className="md:w-1/2 md:h-44 w-[40%] h-36 block rounded-md lg:scale-90"
                 src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
                 alt=""
               />

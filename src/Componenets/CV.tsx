@@ -20,7 +20,7 @@ const CV = () => {
           trigger: container.current,
           start: "80% 30%",
           end: "150% 60%",
-          scrub: 2,
+          scrub: 1,
           //markers: true,
           // pin: true,
         },
@@ -45,8 +45,8 @@ const CV = () => {
           trigger: container.current,
           start: "100% 40%",
           end: "150% 60%",
-          scrub: 2,
-          markers: true,
+          scrub: 1,
+          //markers: true,
           // pin: true,
         },
       });
@@ -70,20 +70,21 @@ const CV = () => {
       ref={container}
       className="flex  lg:pb-32 flex-col justify-center items-center h-[150vh] md:h-[170vh] w-screen relative"
     >
-      <div className="md:h-[35vh] h-[20vh] md:w-[40vw] w-[80vw] flex flex-col justify-center items-center parent ">
+      <div className="md:h-[35vh]  h-[20vh] md:w-[40vw] w-[80vw] flex flex-col justify-center items-center parent ">
         {/* fist */}
-        <div className="h-full w-full relative -mb-[1px] ">
+        <div className="h-full w-full relative -mb-[1px] border ">
           <div className="w-full  h-full rounded  ">
             <img
               className="w-full pic h-full object-cover object-top origin-top"
               src={myImage}
               alt=""
+              // style={{ filter: "grayscale(0)" }}
             />
           </div>
           <div className=" absolute bottom-0 w-full h-[3px] rounded-b bg-gradient-to-r from-gray-100 to-gray-50 border border-zinc-50 "></div>
         </div>
         {/* second */}
-        <div className="h-full w-full relative img2 my-[.4px] perspective origin-top">
+        <div className="h-full w-full relative img2 -my-[1px] perspective origin-top border">
           <div className=" absolute top-0 w-full h-[1px] rounded bg-white  "></div>
           <div className="w-full  h-full  rounded  ">
             <img
@@ -95,11 +96,11 @@ const CV = () => {
           <div className=" absolute bottom-0 w-full h-[3px] rounded-b bg-gradient-to-r from-gray-100 to-gray-50 border border-zinc-50 "></div>
         </div>
         {/* third */}
-        <div className="h-full w-full relative img3  perspective origin-top">
+        <div className="h-full w-full relative img3  perspective origin-top border">
           <div className=" absolute top-0 w-full h-[1px] rounded bg-white  "></div>
           <div className="w-full  h-full  rounded  ">
             <img
-              className="w-full pic h-full object-cover object-bottom origin-top"
+              className="w-full pic h-full object-cover object-bottom origin-top "
               src={myImage}
               alt=""
             />
@@ -107,7 +108,7 @@ const CV = () => {
         </div>
       </div>
       <div className="">
-        <h1 className="md:text-4xl text-2xl font-custombold8 capitalize font-bold head z-30 relative bottom-0 opacity-0">
+        <h1 className="md:text-4xl text-2xl font-custombold capitalize font-bold head z-30 relative bottom-0 opacity-0">
           Created by Hammad
         </h1>
       </div>
