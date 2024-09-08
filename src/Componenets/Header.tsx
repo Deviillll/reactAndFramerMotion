@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect } from "react";
-
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -24,11 +23,6 @@ const Header = () => {
   const bg2 =
     "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzA3emJxemNmazZzNm41cWszZnh2eXVtb2tsNGpsajF3ajJucmQ5MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RIFmnDkGgxcvaS66IN/giphy.gif";
 
-  const bg3 =
-    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3NkMjI4Z2dhNWcyNXg1N3lqanJnajNocXlreGNpeXlvMjhyMXZrZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7TKDWHLxBC6td7lC/giphy.gif";
-  const bg4 =
-    "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGpsY3VqanhscnMxaXpxdHZ6cDU1OXlqdmZ0OHN6bnFkbDU3YWs2MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q30uxU49VKhJFE4/giphy.gif";
-
   const container = useRef<HTMLDivElement>(null);
   const container2 = useRef<HTMLDivElement>(null);
 
@@ -36,16 +30,23 @@ const Header = () => {
     gsap.from(".textanime", {
       duration: 2.5,
       xPercent: -90,
-
       ease: "power4.out",
     });
     gsap.from(".btn", {
       delay: 1.8,
       xPercent: -50,
-
       ease: "power4.out",
     });
   });
+
+  const downloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/hammadtariqcv.pdf";
+    link.download = "Hammad_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div id="home" className="overflow-hidden">
@@ -92,7 +93,10 @@ const Header = () => {
 
           <h1 className=" md:ml-10 flex   textanime">websites </h1>
           <div className="md:ml-10 lg:ml-12  btn">
-            <button className=" text-sm text-center md:text-xl flex-col lg:text-3xl uppercase flex mt-5 md:mt-4 lg:mt-3 items-center rounded-md tracking-tight bg-zinc-50 px-2 md:px-3 lg:px-4 lg:py-2 xl:px-5 xl:py-3 font-custombold6 py-3 text-zinc-950/90 hover:scale-110 hover:bg-purple-300/90 hover:text-gray-50 transition-all ease-in-out duration-150 ">
+            <button
+              onClick={downloadCV}
+              className=" text-sm text-center md:text-xl flex-col lg:text-3xl uppercase flex mt-5 md:mt-4 lg:mt-3 items-center rounded-md tracking-tight bg-zinc-50 px-2 md:px-3 lg:px-4 lg:py-2 xl:px-5 xl:py-3 font-custombold6 py-3 text-zinc-950/90 hover:scale-110 hover:bg-purple-300/90 hover:text-gray-50 transition-all ease-in-out duration-150 "
+            >
               <div className="flex gap-x-2 items-center justify-center">
                 <span className="">
                   <FiDownload className="text-purple-400  " />

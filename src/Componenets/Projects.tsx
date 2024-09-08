@@ -4,15 +4,19 @@ import gsap from "gsap";
 const data = [
   {
     title: "whatsApp",
+    link: "https://wa.me/+923019060888",
   },
   {
     title: "Instagram",
+    link: "https://www.instagram.com/____hammad__/",
   },
   {
     title: "LinkedIn",
+    link: "https://www.linkedin.com/in/hammadtariq77/",
   },
   {
     title: "github",
+    link: "https://github.com/Deviillll",
   },
 ];
 
@@ -27,22 +31,24 @@ const Projects = () => {
             index === 0 && "border-t"
           } `}
         >
-          <div
-            id="parent"
-            className="flex w-full h-full justify-between  items-center text-zinc-50 md:text-zinc-950 group sm:px-3 px-2 md:px-5 lg:px-10"
-          >
+          <a href={item.link} target="blank" className="w-full h-full block">
             <div
-              id="heading"
-              className=" h-full w-[23%] flex items-center group-hover:text-black md:group-hover:text-white z-10 transition-colors duration-300 ease-in-out group-hover:font-bold"
+              id="parent"
+              className="flex w-full h-full justify-between  items-center text-zinc-50 md:text-zinc-950 group sm:px-3 px-2 md:px-5 lg:px-10"
             >
-              <h1 className="text-2xl md:text-4xl   ">{item.title}</h1>
+              <div
+                id="heading"
+                className=" h-full w-[23%] flex items-center group-hover:text-black md:group-hover:text-white z-10 transition-colors duration-300 ease-in-out group-hover:font-bold"
+              >
+                <h1 className="text-2xl md:text-4xl   ">{item.title}</h1>
+              </div>
+              <div className="group-hover:text-zinc-50 z-10 group-hover:translate-y-1 transition-transform duration-700 ease-in-out">
+                <span className="mr-6 text-3xl md:text-4xl lg:text-5x  font-bold">
+                  ↗
+                </span>
+              </div>
             </div>
-            <div className="group-hover:text-zinc-50 z-10 group-hover:translate-y-1 transition-transform duration-700 ease-in-out">
-              <span className="mr-6 text-3xl md:text-4xl lg:text-5x  font-bold">
-                ↗
-              </span>
-            </div>
-          </div>
+          </a>
         </div>
       ))}
     </div>

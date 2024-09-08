@@ -4,6 +4,24 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useRef, useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
+const data = [
+  {
+    title: "whatsApp",
+    link: "https://wa.me/+923019060888",
+  },
+  {
+    title: "Instagram",
+    link: "https://www.instagram.com/____hammad__/",
+  },
+  {
+    title: "LinkedIn",
+    link: "https://www.linkedin.com/in/hammadtariq77/",
+  },
+  {
+    title: "github",
+    link: "https://github.com/Deviillll",
+  },
+];
 
 const FooterComponent = () => {
   const container = useRef(null);
@@ -75,30 +93,43 @@ const FooterComponent = () => {
           </div>
           {/* contacts and links */}
           <div>
-            <a className="block" href="">
+            <a
+              className="block hover:scale-105 transition-transform ease-out duration-200"
+              href="#home"
+            >
               Home
             </a>
-            <a className="block" href="">
+            <a
+              className="block hover:scale-105 transition-transform ease-out duration-200"
+              href="#aboutme"
+            >
               About
             </a>
-            <a className="block" href="">
+            <a
+              className="block hover:scale-105 transition-transform ease-out duration-200"
+              href="projects"
+            >
               Work
             </a>
-            <a className="block" href="">
+            <a
+              className="block hover:scale-105 transition-transform ease-out duration-200"
+              href="contact"
+            >
               Contact
             </a>
           </div>
           {/* social logins */}
           <div>
-            <a className="block" href="">
-              Instagram
-            </a>
-            <a className="block" href="">
-              WhatsApp
-            </a>
-            <a className="block" href="">
-              LinkedIn
-            </a>
+            {data.map((item, index) => (
+              <a
+                key={index}
+                className="block hover:scale-105 transition-transform ease-out duration-200"
+                target="_blank"
+                href={item.link}
+              >
+                {item.title}
+              </a>
+            ))}
           </div>
         </div>
         {/* lower part */}
@@ -107,7 +138,9 @@ const FooterComponent = () => {
             <h1>Lahore, Pakistan</h1>
           </div>
           <div>
-            <p className="lowercase">hammadtariq7777@gmail.com</p>
+            <a href="mailto:hammadtariq7777@gmail.com">
+              <p className="lowercase">hammadtariq7777@gmail.com</p>
+            </a>
           </div>
           <div>
             <p>© 2024 copyrights reserved</p>

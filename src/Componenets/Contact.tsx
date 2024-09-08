@@ -1,7 +1,13 @@
+//@ts-nocheck
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Projects from "./Projects";
+import foodImageHero from "/food-app-hero-img.png";
+import movieImageHero from "/movie-app-hero.png";
+import foodImage2 from "/food-app-2.png";
+import movieImage2 from "/movie-app-2.png";
+import foodImage3 from "/food-app-3.png";
+import movieImage3 from "/movie-app-3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,65 +110,78 @@ const Contact = () => {
         className="h-screen flex w-[200vw] bg-zinc-950 innerContainer overflow-hidden justify-between  "
         ref={innerContainer}
       >
-        <div className="w-[100vw]  scale-90 overflow-hidden firstInnerChild font-custombold0 h-ful flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
+        <div className="w-[100vw]  scale-90 overflow-hidden firstInnerChild font-custombold1 h-ful flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
           <div className=" lg:w-[40%] px-4 ">
-            <h1 className="text-4xl  font-bold my-4 ">Food Ordering app</h1>
-            <p className="text-lg md:mt-6 leading-tight tracking-tight">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis id aperiam fugiat a porro voluptatibus, quae
-              accusantium beatae accusamus impedit doloremque alias laudantium
-              quis voluptatum provident laboriosam eveniet, in iusto?
+            <h1 className="text-4xl  font-bold my-4 text-orange-400 ">
+              Food Ordering app
+            </h1>
+            <p className="text-lg md:mt-6 leading-tight tracking-wider">
+              Built a user-friendly food ordering app with Next.js & Auth.js,
+              featuring Stripe payment & MongoDB for efficient data management
             </p>
+            <button className=" mt-5 capitalize hover:bg-white hover:text-black transition-colors ease-in-out duration-300 text-zinc-50 border border-zinc-50 rounded-full px-4 py-3">
+              <a target="blank" href="https://foodbay-pk.vercel.app/">
+                preview now
+              </a>
+            </button>
           </div>
-          <div className=" lg:w-[40%] justify-center flex flex-col space-y-3  ">
+          <div className=" lg:w-[50%] justify-center flex flex-col space-y-3  ">
             <img
-              className="w-[80%] mx-auto rounded-md"
-              src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+              className="w-[90%] mx-auto rounded-md  object-cover object-center"
+              src={foodImageHero}
               alt=""
             />
             <div className="flex gap-x-2 lg:gap-x-4 justify-end px-3">
               <img
-                className="md:w-1/2 w-[40%] md:h-44 h-36 block rounded-md "
-                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                className="md:w-1/2 w-[50%] md:h-44 h-36 block rounded-md  object-cover object-center"
+                src={foodImage2}
                 alt=""
               />
               <img
-                className="md:w-1/2 w-[40%] md:h-44 h-36 block rounded-md lg:scale-90"
-                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                className="md:w-1/2 w-[50%] md:h-44 h-36 block rounded-md lg:scale-90 object-cover object-center"
+                src={foodImage3}
                 alt=""
               />
             </div>
           </div>
         </div>
 
-        <div className="w-[100vw]  firstInnerChild2 font-custombold0 scale-90  h-full flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
-          <div className=" lg:w-[40%] justify-center flex flex-col space-y-3 px-2 ">
+        <div className="w-[100vw]  firstInnerChild2 font-custombold1 scale-90  h-full flex flex-col lg:flex-row justify-around items-center text-zinc-50  bg-zinc-950">
+          <div className=" lg:w-[50%] justify-center flex flex-col space-y-5 px-2 ">
             <img
-              className="w-[80%] mx-auto rounded-md"
-              src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+              className="w-[90%] mx-auto rounded-md object-cover object-center"
+              src={movieImageHero}
               alt=""
             />
-            <div className="flex gap-x-2 lg:gap-x-4 justify-end">
+            <div className="flex gap-x-2 lg:gap-x-2 justify-end object-cover object-center">
               <img
-                className="md:w-1/2 md:h-44 w-[40%] h-36 block rounded-md "
-                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                className="md:w-1/2 md:h-44 w-[50%] h-36 block rounded-md  object-cover object-bottom"
+                src={movieImage2}
                 alt=""
               />
               <img
-                className="md:w-1/2 md:h-44 w-[40%] h-36 block rounded-md lg:scale-90"
-                src="https://cdn.pixabay.com/photo/2023/08/23/12/50/fog-8208493_1280.jpg"
+                className="md:w-1/2 md:h-44 w-[50%] h-36 block rounded-md lg:scale-90 object-cover object-center"
+                src={movieImage3}
                 alt=""
               />
             </div>
           </div>
           <div className="  lg:w-[40%] px-3 ">
-            <h1 className="text-4xl  font-bold my-4">Movie Streaming App</h1>
-            <p className="text-lg md:mt-6 leading-tight tracking-tight ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis id aperiam fugiat a porro voluptatibus, quae
-              accusantium beatae accusamus impedit doloremque alias laudantium
-              quis voluptatum provident laboriosam eveniet, in iusto?
+            <h1 className="text-4xl text-red-600 font-bold my-4">
+              Movie Streaming App
+            </h1>
+            <p className="text-lg md:mt-6 leading-tight tracking-wider ">
+              Built a Netflix-like movie streaming app with Next.js and Tailwind
+              CSS, utilizing a movie database API. Optimized performance using
+              Next.js Image Optimization
             </p>
+            <div>
+              <button className=" mt-5 capitalize hover:bg-white hover:text-black transition-colors ease-in-out duration-300 text-zinc-50 border border-zinc-50 rounded-full px-4 py-3">
+                <a target="blank" href="https://meow-flix.vercel.app/">
+                  preview now
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </div>

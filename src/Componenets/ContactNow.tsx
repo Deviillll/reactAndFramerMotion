@@ -26,12 +26,14 @@ const ContactComponent = () => {
         <div>
           <h1 className="font-custombold0 uppercase">Send me a message</h1>
         </div>
-        <div className="flex flex-col space-y-4 w-full px-2 ">
+        <form className="flex flex-col space-y-4 w-full px-2 ">
           <div>
             <input
               className="py-4 w-full rounded-sm focus:outline-none capitalize focus:border-purple-400 bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
               type="text"
               placeholder="what's your name?"
+              required
+              name="name"
             />
           </div>
           <div>
@@ -39,6 +41,7 @@ const ContactComponent = () => {
               className="py-4 w-full rounded-sm focus:outline-none focus:border-purple-400 capitalize  bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
               type="text"
               placeholder="what' your company called?"
+              name="company"
             />
           </div>
           <div>
@@ -46,6 +49,8 @@ const ContactComponent = () => {
               className="py-4 w-full rounded-sm focus:outline-none focus:border-purple-400 capitalize  bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
               type="text"
               placeholder="what's your email?"
+              required
+              name="email"
             />
           </div>
           <div>
@@ -53,20 +58,26 @@ const ContactComponent = () => {
               className="py-4 w-full rounded-sm focus:outline-none focus:border-purple-400 capitalize  bg-zinc-50 placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
               type="text"
               placeholder="what service you looking for?"
+              name="service"
             />
           </div>
           <div>
             <textarea
               className="py-4 w-full rounded-sm focus:outline-none bg-zinc-50 focus:border-purple-400 capitalize  placeholder-neutral-500 font-custombold9 border-b border-zinc-950 "
               placeholder="what's your message?"
+              required
+              name="message"
             />
           </div>
           <div>
-            <button className="  capitalize  text-zinc-950 border hover:bg-black hover:text-white transition-colors ease-in-out duration-300 border-zinc-950  rounded-full px-5 py-4">
+            <button
+              type="submit"
+              className="  capitalize  text-zinc-950 border hover:bg-black hover:text-white transition-colors ease-in-out duration-300 border-zinc-950  rounded-full px-5 py-4"
+            >
               send message
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
