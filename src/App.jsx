@@ -27,6 +27,7 @@ const App = () => {
       <CV />
       {/* contact */}
       <Projects />
+
       <ContactComponent />
 
       <FooterComponent />

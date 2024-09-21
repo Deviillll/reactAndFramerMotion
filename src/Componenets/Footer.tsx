@@ -81,7 +81,7 @@ const FooterComponent = () => {
   return (
     <footer
       ref={container}
-      className="w-screen h-[60vh] md:h-[85vh] lg:h-screen px-4 md:px-6 pt-10 lg:pt-3"
+      className="w-screen h-[60vh] md:h-[85vh] lg:h-screen px-4 md:px-6 pt-10 lg:pt-3 "
     >
       <div className="lg:space-y-40 space-y-20">
         {/* upper part */}

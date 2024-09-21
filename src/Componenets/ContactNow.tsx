@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const ContactComponent = () => {
   return (
     <div
-      className="w-screen h-screen bg-zinc-50 text-zinc-950 flex lg:flex-row flex-col md:px-8 px-5 pb-7 lg:py-5  md:justify-center"
+      className="w-screen h-screen bg-zinc-50  text-zinc-950 flex lg:flex-row flex-col md:px-8 px-5 pb-7 lg:py-5  md:justify-center"
       id="contact"
     >
       {/* heading */}
