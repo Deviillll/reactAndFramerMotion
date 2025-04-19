@@ -42,7 +42,7 @@ const Header = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
     link.href = "/hammadtariqcv.pdf";
-    link.download = "Hammad_CV.pdf";
+    link.download = "Hammad-CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
